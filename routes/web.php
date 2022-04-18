@@ -17,6 +17,14 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Route::get('/index', function () {
-//     return view('index');
-// });
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/absen', function () {
+    return view('absen');
+});
+
+Route::get('/history', function () {
+    return view('history');
+});
