@@ -109,8 +109,6 @@
 	</header>
 	<!-- [ Header ] end -->
 	
-	
-
 <!-- [ Main Content ] start -->
 @yield('content')
 
