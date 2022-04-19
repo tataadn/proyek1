@@ -40,27 +40,28 @@
                                         <input type="text" class="form-control" id="nama" placeholder="">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-12 pt-3">
                                     <div class="form-group">
                                         <label class="floating-label" for="kelas">Kelas</label>
                                         <input type="text" class="form-control" id="kelas" placeholder="">
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
+                                <div class="col-sm-12 pt-3">
                                     <div class="form-group">
                                         <label class="floating-label" for="password">Mata Pelajaran</label>
                                         <input type="text" class="form-control" id="password" placeholder="">
                                     </div>
                                 </div>
-								<div class="col-sm-9 pt-3">
-                                    <div class="form-group">
-                                        <label class="floating-label" for="Text">Lokasi</label>
-                                        <input type="text" class="form-control" id="lokasi" placeholder="Jawa Timur">
-                                    </div>
-                                </div>
-								<div class="col-sm-3 pt-3">
-									<a href="#" type="button" class="btn btn-primary">Lokasi</a>
+                                <div class="col-sm-3 pt-4">
+									<button type="button" class="btn btn-primary" onclick="getLocation()">Lokasi Anda</button>
 								</div>
+								<div class="col-sm-9 pt-4">
+                                    <fieldset disabled="disabled">
+                                        <div class="">
+                                            <h5 id="location"></h5>
+                                        </div>
+                                    </fieldset>
+                                </div>
                             </div>
                         </form>
 						<div class="row p-3 mt-3">

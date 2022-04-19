@@ -118,6 +118,9 @@
 <script src="assets/js/ripple.js"></script>
 <script src="assets/js/pcoded.min.js"></script>
 
+<!-- JavaScript Lokasi -->
+<script src="script.js"></script>
+
 <!-- Apex Chart -->
 <script src="assets/js/plugins/apexcharts.min.js"></script>
 
