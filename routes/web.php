@@ -13,18 +13,31 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 });
 
-Route::get('/profile', function () {
-    return view('profile');
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::get('/absen', function () {
-    return view('absen');
+Route::get('/register', function () {
+    return view('register');
 });
 
-Route::get('/history', function () {
-    return view('history');
+// Routes for Siswa
+Route::get('/', function () {
+    return view('siswa/index');
+});
+
+Route::get('/siswa-profile', function () {
+    return view('siswa/profile');
+});
+
+Route::get('/siswa-absen', function () {
+    return view('siswa/absen');
+});
+
+Route::get('/siswa-history', function () {
+    return view('siswa/history');
 });

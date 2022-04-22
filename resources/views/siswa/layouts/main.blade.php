@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Absen Siswa</title>
+    <title>MA Ma'arif Udanawu</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -46,13 +46,13 @@
 					    <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item">
-					    <a href="/profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profile</span></a>
+					    <a href="/siswa-profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profile</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Absen</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="/absen">Absensi</a></li>
-					        <li><a href="/history">Riwayat Absensi</a></li>
+					        <li><a href="/siswa-absen">Absensi</a></li>
+					        <li><a href="/siswa-history">Riwayat Absensi</a></li>
 					    </ul>
 					</li>
 				</ul>
@@ -64,7 +64,7 @@
 	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
 				<div class="m-header">
 					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
-					<a href="#!" class="b-brand">
+					<a href="/" class="b-brand">
 						<!-- ========   change your logo hear   ============ -->
 						<img src="assets/images/ma-maarif.png" alt="" class="logo">
 						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
