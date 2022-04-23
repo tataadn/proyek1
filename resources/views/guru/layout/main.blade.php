@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>MA Ma'arif Udanawu | Siswa</title>
+    <title>MA Ma'arif Udanawu | Guru</title>
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
@@ -33,7 +33,7 @@
 					<div class="main-menu-header">
 						<img class="img-radius" src="assets/images/user/user.jpg" alt="User-Profile-Image">
 						<div class="user-details">
-							<div id="more-details">Nama Siswa</div>
+							<div id="more-details">Nama Guru</div>
 						</div>
 					</div>
 				</div>
@@ -43,16 +43,16 @@
 					    <label>Navigasi</label>
 					</li>
 					<li class="nav-item">
-					    <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					    <a href="/guru" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item">
-					    <a href="/siswa-profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profile</span></a>
+					    <a href="/guru-profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profil</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
-					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Absen</span></a>
+					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Kelola Siswa</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="/siswa-absen">Absensi</a></li>
-					        <li><a href="/siswa-history">Riwayat Absensi</a></li>
+					        <li><a href="/guru-data">Data Siswa</a></li>
+					        <li><a href="/guru-absensi">Data Absensi Siswa</a></li>
 					    </ul>
 					</li>
 				</ul>
@@ -110,7 +110,7 @@
 	<!-- [ Header ] end -->
 	
 <!-- [ Main Content ] start -->
-@yield('content')
+@yield('contents')
 
 <!-- Required Js -->
 <script src="assets/js/vendor-all.min.js"></script>
