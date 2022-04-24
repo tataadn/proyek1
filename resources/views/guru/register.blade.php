@@ -26,26 +26,69 @@
 			<div class="row align-items-center text-center">
 				<div class="col-md-12">
 					<div class="card-body">
-						<img src="assets/images/logo-dark.png" alt="" class="img-fluid mb-4">
-						<h4 class="mb-3 f-w-400">Sign up</h4>
+						<img src="assets/images/ma-maarif.png" alt="" class="img-fluid mb-4">
+						<h4 class="mb-3 f-w-400">Register Guru</h4>
 						<div class="form-group mb-3">
-							<label class="floating-label" for="Username">Username</label>
-							<input type="text" class="form-control" id="Username" placeholder="">
+							<label class="floating-label" for="nama_guru">Nama Guru</label>
+							<input type="text" class="form-control" id="nama_guru" placeholder="">
 						</div>
 						<div class="form-group mb-3">
-							<label class="floating-label" for="Email">Email address</label>
-							<input type="text" class="form-control" id="Email" placeholder="">
+							<div class="row">
+									<div class="col-xl-3">
+										<input type="text" readonly class="form-control-plaintext" id="teksMapel" value="Mapel :">
+							</div>
+								<div class="col-xl-9">
+										<select class="form-control" id="mapel">
+											<option>PAI</option>
+											<option>PKN</option>
+											<option>Bahasa Indonesia</option>
+											<option>Bahasa Inggris</option>
+											<option>Matematika Wajib</option>
+											<option>Matematika Peminatan</option>
+											<option>Fisika</option>
+											<option>Biologi</option>
+											<option>Kimia</option>
+											<option>Geografi</option>
+											<option>Ekonomi</option>
+											<option>Sejarah</option>
+											<option>Sosiologi</option>
+										</select>
+								</div>
+							</div>
 						</div>
+						<div class="form-group mb-3">
+								<div class="row">
+									<div class="col-xl-5">
+										<input type="text" readonly class="form-control-plaintext" id="teksJk" value="Jenis Kelamin :">
+									</div>
+									<div class="col-xl-7">
+										<select class="form-control" id="jenkel">
+											<option>Laki-laki</option>
+											<option>Perempuan</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						<div class="form-group mb-3">
+								<label class="floating-label" for="Address">Alamat</label>
+								<input type="text" class="form-control" id="address" placeholder="">
+						</div>
+						<div class="form-group mb-3">
+								<label class="floating-label @error('nip') is-invalid @enderror" for="id_guru">NIP</label>
+								<input type="text" class="form-control" id="id_guru" placeholder="">
+								@error('nip')
+								<div class="invalid-feedback">
+									NIP harus berupa angka
+								</div>
+								@enderror
+							</div>
 						<div class="form-group mb-4">
-							<label class="floating-label" for="Password">Password</label>
-							<input type="password" class="form-control" id="Password" placeholder="">
+								<label class="floating-label" for="Password">Password</label>
+								<input type="password" class="form-control" id="Password" placeholder="">
 						</div>
-						<div class="custom-control custom-checkbox  text-left mb-4 mt-2">
-							<input type="checkbox" class="custom-control-input" id="customCheck1">
-							<label class="custom-control-label" for="customCheck1">Send me the <a href="#!"> Newsletter</a> weekly.</label>
-						</div>
-						<button class="btn btn-primary btn-block mb-4">Sign up</button>
-						<p class="mb-2">Already have an account? <a href="auth-signin.html" class="f-w-400">Signin</a></p>
+
+						<button class="btn btn-primary btn-block mb-4">DAFTAR</button>
+						<p class="mb-2">Sudah Memiliki Akun? <a href="/login-guru" class="f-w-400">Login</a></p>
 					</div>
 				</div>
 			</div>
