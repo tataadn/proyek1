@@ -28,14 +28,16 @@
 					<div class="card-body">
 						<img src="assets/images/ma-maarif.png" alt="" class="img-fluid mb-4">
 						<h4 class="mb-3 f-w-400">Register Guru</h4>
-						<div class="form-group mb-3">
+						<form action="/register-guru" method="POST">
+							@csrf 
+						<div class="form-group mb-3"">
 							<label class="floating-label" for="nama_guru">Nama Guru</label>
 							<input type="text" class="form-control" id="nama_guru" placeholder="">
 						</div>
 						<div class="form-group mb-3">
 							<div class="row">
 									<div class="col-xl-3">
-										<input type="text" readonly class="form-control-plaintext" id="teksMapel" value="Mapel :">
+										<input type="text" readonly class="form-control-plaintext" id="namaMapel" value="Mapel :">
 							</div>
 								<div class="col-xl-9">
 										<select class="form-control" id="mapel">
@@ -71,7 +73,7 @@
 							</div>
 						<div class="form-group mb-3">
 								<label class="floating-label" for="Address">Alamat</label>
-								<input type="text" class="form-control" id="address" placeholder="">
+								<input type="text" class="form-control" id="alamat" placeholder="">
 						</div>
 						<div class="form-group mb-3">
 								<label class="floating-label @error('nip') is-invalid @enderror" for="id_guru">NIP</label>
@@ -83,12 +85,14 @@
 								@enderror
 							</div>
 						<div class="form-group mb-4">
-								<label class="floating-label" for="Password">Password</label>
-								<input type="password" class="form-control" id="Password" placeholder="">
+								<label class="floating-label" for="password">Password</label>
+								<input type="password" class="form-control" id="password" placeholder="">
 						</div>
 
 						<button class="btn btn-primary btn-block mb-4">DAFTAR</button>
+						</form>
 						<p class="mb-2">Sudah Memiliki Akun? <a href="/login-guru" class="f-w-400">Login</a></p>
+						<a href="/" class="f-w-400">Kembali ke Halaman Utama</a>
 					</div>
 				</div>
 			</div>

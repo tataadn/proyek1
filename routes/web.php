@@ -30,6 +30,7 @@ Route::get('/siswa-history', [SiswaController::class, 'history']);
 //Routes for Guru
 Route::get('/login-guru', [GuruController::class, 'login']);
 Route::get('/register-guru', [GuruController::class, 'register']);
+Route::post('/register-guru', [GuruController::class, 'store']);
 Route::get('/guru', [GuruController::class, 'index']);
 Route::get('/guru-profile', [GuruController::class, 'profile']);
 Route::get('/guru-data', [GuruController::class, 'datasiswa']);

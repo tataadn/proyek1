@@ -33,4 +33,15 @@ class GuruController extends Controller
     public function register(){
         return view('guru.register');
     }
+
+    public function store(Request $request){
+        $request->validate([
+            'nama_guru' => 'required|max:255',
+            'mapel' => 'required',
+            'jenkel' => 'required',
+            'alamat' => 'required|max:255',
+            'nip' => 'required|unique:guru|integer|max:12',
+            'password' => 'required|min:6'
+        ]);
+    }
 }
