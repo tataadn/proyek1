@@ -38,7 +38,7 @@
 							<input type="password" class="form-control" id="Password" placeholder="">
 						</div>
 						<button class="btn btn-block btn-primary mb-4">Login</button>
-						<p class="mb-0 text-muted">Belum punya akun? <a href="auth-signup.html" class="f-w-400">Daftar di sini</a></p>
+						<p class="mb-0 text-muted">Belum punya akun? <a href="/register-guru" class="f-w-400">Daftar di sini</a></p>
 					</div>
 				</div>
 			</div>
