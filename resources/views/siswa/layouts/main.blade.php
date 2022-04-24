@@ -97,7 +97,7 @@
 										<span>Rara Nasution</span>
 									</div>
 									<ul class="pro-body">
-										<li><a href="" class="dropdown-item"><i class="feather icon-log-out"></i>Logout</a></li>
+										<li><a href="/login-siswa" class="dropdown-item"><i class="feather icon-log-out"></i>Logout</a></li>
 									</ul>
 								</div>
 							</div>
