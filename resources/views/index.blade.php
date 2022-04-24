@@ -86,7 +86,7 @@
                 <div class="carousel-item active">
                     <img class="img-fluid d-block w-100" src="assets/images/ma-maarif-coveredit.jpg" alt="First slide">
                     <div class="carousel-caption d-none d-md-block">
-                        <h3 class="text-white">Selamat Datang!</h3>
+                        <h3 class="text-white">Welcome!</h3>
                         <p>Website Absensi MA Maarif Udanawu</p>
                     </div>
                 </div>
