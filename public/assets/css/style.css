@@ -24003,7 +24003,6 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
     overflow: hidden;
     min-width: 100%;
     min-height: 100vh;
-    background: #4680ff;
 }
 
 @media (min-width: 1200px) {
@@ -24179,7 +24178,7 @@ div.dtk-focus-alt table.dataTable tbody th.focus {
 }
 
 .auth-wrapper .card-body .carousel-indicators li.active {
-    background-color: #4680ff;
+    background:url(assets/images/ma-maarif-coveredit.jpg);
 }
 
 .auth-wrapper .img-logo-overlay {

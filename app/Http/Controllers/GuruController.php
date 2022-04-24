@@ -26,5 +26,11 @@ class GuruController extends Controller
         return view('guru.rekap');
     }
 
+    public function login(){
+        return view('guru.login');
+    }
 
+    public function register(){
+        return view('guru.register');
+    }
 }

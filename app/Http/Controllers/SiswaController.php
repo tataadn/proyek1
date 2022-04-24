@@ -21,4 +21,12 @@ class SiswaController extends Controller
     public function history(){
         return view('siswa.history');
     }
+
+    public function login(){
+        return view('siswa.login');
+    }
+
+    public function register(){
+        return view('siswa.register');
+    }
 }

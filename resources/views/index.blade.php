@@ -40,15 +40,15 @@
                     <li class="nav-item pcoded-hasmenu">
                         <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Siswa</span></a>
                         <ul class="pcoded-submenu">
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/registrasi">Registrasi</a></li>
+                            <li><a href="/login-siswa">Login</a></li>
+                            <li><a href="/register-siswa">Registrasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pcoded-hasmenu">
                         <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Guru</span></a>
                         <ul class="pcoded-submenu">
-                            <li><a href="/login">Login</a></li>
-                            <li><a href="/registrasi">Registrasi</a></li>
+                            <li><a href="/login-guru">Login</a></li>
+                            <li><a href="/register-guru">Registrasi</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="img-fluid d-block w-100" src="assets/images/slider/img-slide-4.jpg" alt="Second slide">
+                    <img class="img-fluid d-block w-100" src="assets/images/coveredit-ma-maarif.jpg" alt="Second slide">
                     <div class="carousel-caption d-none d-md-block">
                         <h3 class="text-white">Tentang</h3>
                         <p>Website Absensi berbasis GPS untuk mengetahui lokasi dari siswa</p>

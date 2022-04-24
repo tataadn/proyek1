@@ -15,25 +15,21 @@ use App\Http\Controllers\SiswaController;
 |
 */
 
-Route::get('/index', function () {
+Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/register', function () {
-    return view('register');
-});
-
 // Routes for Siswa
+Route::get('/login-siswa', [SiswaController::class, 'login']);
+Route::get('/register-siswa', [SiswaController::class, 'register']);
 Route::get('/siswa', [SiswaController::class, 'index']);
 Route::get('/siswa-profile', [SiswaController::class, 'profile']);
 Route::get('/siswa-absen', [SiswaController::class, 'absen']);
 Route::get('/siswa-history', [SiswaController::class, 'history']);
 
 //Routes for Guru
+Route::get('/login-guru', [GuruController::class, 'login']);
+Route::get('/register-guru', [GuruController::class, 'register']);
 Route::get('/guru', [GuruController::class, 'index']);
 Route::get('/guru-profile', [GuruController::class, 'profile']);
 Route::get('/guru-data', [GuruController::class, 'datasiswa']);
