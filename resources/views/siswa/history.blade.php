@@ -36,10 +36,12 @@
                             <table class="table">
                                 <thead>
                                     <tr>
-                                        <th>#</th>
-                                        <th>First Name</th>
-                                        <th>Last Name</th>
-                                        <th>Username</th>
+                                        <th>No</th>
+                                        <th>id absensi</th>
+                                        <th>Tanggal</th>
+                                        <th>Jadwal</th>
+                                        <th>Nama siswa</th>
+                                        <th>Lokasi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
