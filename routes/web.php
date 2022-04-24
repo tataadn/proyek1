@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,40 +28,15 @@ Route::get('/register', function () {
 });
 
 // Routes for Siswa
-Route::get('/', function () {
-    return view('siswa/index');
-});
-
-Route::get('/siswa-profile', function () {
-    return view('siswa/profile');
-});
-
-Route::get('/siswa-absen', function () {
-    return view('siswa/absen');
-});
-
-Route::get('/siswa-history', function () {
-    return view('siswa/history');
-});
+Route::get('/siswa', [SiswaController::class, 'index']);
+Route::get('/siswa-profile', [SiswaController::class, 'profile']);
+Route::get('/siswa-absen', [SiswaController::class, 'absen']);
+Route::get('/siswa-history', [SiswaController::class, 'history']);
 
 
 //Routes for Guru
-Route::get('/guru', function () {
-    return view('guru/index');
-});
-
-Route::get('/guru-profile', function () {
-    return view('guru/profile');
-});
-
-Route::get('/guru-data', function () {
-    return view('guru/datasiswa');
-});
-
-Route::get('/guru-absensi', function () {
-    return view('guru/absensi');
-});
-
-Route::get('/guru-rekap', function () {
-    return view('guru/rekap');
-});
+Route::get('/guru', [GuruController::class, 'index']);
+Route::get('/guru-profile', [GuruController::class, 'profile']);
+Route::get('/guru-data', [GuruController::class, 'datasiswa']);
+Route::get('/guru-absensi', [GuruController::class, 'absensi']);
+Route::get('/guru-rekap', [GuruController::class, 'rekap']);

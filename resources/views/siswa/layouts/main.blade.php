@@ -43,7 +43,7 @@
 					    <label>Navigasi</label>
 					</li>
 					<li class="nav-item">
-					    <a href="/" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					    <a href="/siswa" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item">
 					    <a href="/siswa-profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profile</span></a>
@@ -64,7 +64,7 @@
 	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
 				<div class="m-header">
 					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
-					<a href="/" class="b-brand">
+					<a href="/siswa" class="b-brand">
 						<!-- ========   change your logo hear   ============ -->
 						<img src="assets/images/ma-maarif.png" alt="" class="logo">
 						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
