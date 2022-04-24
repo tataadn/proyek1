@@ -15,7 +15,7 @@
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="/">Halaman Utama</a></li>
+                            <li class="breadcrumb-item"><a href="/guru">Halaman Utama</a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,8 +56,8 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-yellow">$30200</h4>
-                                        <h6 class="text-muted m-b-0">All Earnings</h6>
+                                        <h4 class="text-c-yellow">IPA 1</h4>
+                                        <h6 class="text-muted m-b-0">28 Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="feather icon-bar-chart-2 f-28"></i>
@@ -67,10 +67,7 @@
                             <div class="card-footer bg-c-yellow">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <p class="text-white m-b-0">% change</p>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <i class="feather icon-trending-up text-white f-16"></i>
+                                        <a href="/guru-data#ipa-1" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -81,21 +78,18 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-green">290+</h4>
-                                        <h6 class="text-muted m-b-0">Page Views</h6>
+                                        <h4 class="text-c-green">IPA 2</h4>
+                                        <h6 class="text-muted m-b-0">29 Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <i class="feather icon-file-text f-28"></i>
+                                        <i class="feather icon-bar-chart-2 f-28"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer bg-c-green">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <p class="text-white m-b-0">% change</p>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <i class="feather icon-trending-up text-white f-16"></i>
+                                        <a href="/guru-data#ipa-2" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -106,21 +100,18 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-red">145</h4>
-                                        <h6 class="text-muted m-b-0">Task</h6>
+                                        <h4 class="text-c-red">IPS 1</h4>
+                                        <h6 class="text-muted m-b-0">27 Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <i class="feather icon-calendar f-28"></i>
+                                        <i class="feather icon-bar-chart-2 f-28"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer bg-c-red">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <p class="text-white m-b-0">% change</p>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <i class="feather icon-trending-down text-white f-16"></i>
+                                        <a href="/guru-data#ips-1" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -131,21 +122,18 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-blue">500</h4>
-                                        <h6 class="text-muted m-b-0">Downloads</h6>
+                                        <h4 class="text-c-blue">IPS 2</h4>
+                                        <h6 class="text-muted m-b-0">28 Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
-                                        <i class="feather icon-thumbs-down f-28"></i>
+                                        <i class="feather icon-bar-chart-2 f-28"></i>
                                     </div>
                                 </div>
                             </div>
                             <div class="card-footer bg-c-blue">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <p class="text-white m-b-0">% change</p>
-                                    </div>
-                                    <div class="col-3 text-right">
-                                        <i class="feather icon-trending-down text-white f-16"></i>
+                                        <a href="/guru-data#ips-2" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>

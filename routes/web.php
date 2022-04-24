@@ -33,7 +33,6 @@ Route::get('/siswa-profile', [SiswaController::class, 'profile']);
 Route::get('/siswa-absen', [SiswaController::class, 'absen']);
 Route::get('/siswa-history', [SiswaController::class, 'history']);
 
-
 //Routes for Guru
 Route::get('/guru', [GuruController::class, 'index']);
 Route::get('/guru-profile', [GuruController::class, 'profile']);

@@ -14,7 +14,7 @@
                             <h5 class="m-b-10">Halaman Profile</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="/guru"><i class="feather icon-home"></i></a></li>
                             <li class="breadcrumb-item"><a href="/profile">Halaman Profile</a></li>
                         </ul>
                     </div>

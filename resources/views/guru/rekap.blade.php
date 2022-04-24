@@ -14,7 +14,7 @@
                             <h5 class="m-b-10">Halaman Data Absensi Siswa</h5>
                         </div>
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="/guru"><i class="feather icon-home"></i></a></li>
                             <li class="breadcrumb-item"><a href="#!">Kelola Siswa</a></li>
                             <li class="breadcrumb-item"><a href="/guru-absensi">Data Absensi Siswa</a></li>
                             <li class="breadcrumb-item"><a href="/guru-rekap">Data Rekap Absensi Siswa</a></li>
