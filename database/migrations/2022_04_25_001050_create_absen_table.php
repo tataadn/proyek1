@@ -15,10 +15,12 @@ return new class extends Migration
     {
         Schema::create('absen', function (Blueprint $table) {
             $table->increments('id_absen');
-            // $table->date('tanggal');
-            // $table->foreignId('id_jadwal')->constrained('jadwal');
-            // $table->foreignId('id_siswa')->constrained('siswa');
-            // $table->string('lokasi',255);
+            $table->date('tanggal');
+            $table->string('id_kelas',10);
+            $table->foreign('id_kelas')->references('id_kelas')->on('kelas');
+            $table->integer('nis');
+            $table->foreign('nis')->references('nis')->on('siswa');
+            $table->string('lokasi',255);
         });
     }
 

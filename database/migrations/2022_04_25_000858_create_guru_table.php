@@ -14,13 +14,15 @@ return new class extends Migration
     public function up()
     {
         Schema::create('guru', function (Blueprint $table) {
-            $table->integer('nip')->primary();
-            // $table->string('password',100);
-            // $table->string('nama_guru',50);
-            // $table->foreign('id_kelas')->references('id_kelas')->on('kelas');
-            // $table->foreign('id_mapel')->references('id_mapel')->on('kelas');
-            // $table->string('jenkel',20);
-            // $table->string('alamat',100);
+            $table->bigInteger('nip')->primary();
+            $table->string('password',100);
+            $table->string('nama_guru',50);
+            $table->string('id_kelas',10);
+            $table->foreign('id_kelas')->references('id_kelas')->on('kelas');
+            $table->string('id_mapel',10);
+            $table->foreign('id_mapel')->references('id_mapel')->on('mapel');
+            $table->string('jenkel',20);
+            $table->string('alamat',100);
         });
     }
 

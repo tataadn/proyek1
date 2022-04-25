@@ -15,9 +15,11 @@ return new class extends Migration
     {
         Schema::create('jadwal', function (Blueprint $table) {
             $table->string('id_jadwal',10)->primary();
-            // $table->string('hari',10);
-            // $table->foreignId('id_kelas')->constrained('kelas');
-            // $table->foreignId('id_guru')->constrained('guru');
+            $table->string('hari',10);
+            $table->string('id_kelas',10);
+            $table->foreign('id_kelas')->references('id_kelas')->on('kelas');
+            $table->bigInteger('nip');
+            $table->foreign('nip')->references('nip')->on('guru');
         });
     }
 
