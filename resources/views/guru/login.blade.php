@@ -30,8 +30,8 @@
 						<img src="assets/images/ma-maarif.png" alt="" class="img-fluid mb-4">
 						<h4 class="mb-3 f-w-400">LOGIN GURU</h4>
 						<div class="form-group mb-3">
-							<label class="floating-label" for="Email">Email</label>
-							<input type="text" class="form-control" id="Email" placeholder="">
+							<label class="floating-label" for="nip">NIP</label>
+							<input type="text" class="form-control" id="nip" placeholder="">
 						</div>
 						<div class="form-group mb-4">
 							<label class="floating-label" for="Password">Password</label>
