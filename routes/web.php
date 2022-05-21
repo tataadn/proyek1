@@ -34,5 +34,6 @@ Route::post('/register-guru', [GuruController::class, 'store']);
 Route::get('/guru', [GuruController::class, 'index']);
 Route::get('/guru-profile', [GuruController::class, 'profile']);
 Route::get('/guru-data', [GuruController::class, 'datasiswa']);
+Route::get('/tambah-siswa',[GuruController::class, 'createsiswa'])->name('siswa.create');
 Route::get('/guru-absensi', [GuruController::class, 'absensi']);
 Route::get('/guru-rekap', [GuruController::class, 'rekap']);

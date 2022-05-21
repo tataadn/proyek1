@@ -30,6 +30,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 1</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -56,6 +57,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -67,6 +69,9 @@
                                         <td>{{$data->id_kelas }}</td>
                                         <td>{{$data->jenis_kelamin }}</td>
                                         <td>{{$data->alamat }}</td>
+                                        <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                            <button type="submit" class="btn btn-danger">Delete</button></td>
+
                                     </tr>
                                     @endforeach
                                 </tbody>
@@ -80,6 +85,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 2</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -106,6 +112,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -117,6 +124,9 @@
                                         <td>{{$data->id_kelas }}</td>
                                         <td>{{$data->jenis_kelamin }}</td>
                                         <td>{{$data->alamat }}</td>
+                                        <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                            <button type="submit" class="btn btn-danger">Delete</button></td>
+
                                     </tr>
                                     @endforeach                                
                                 </tbody>
@@ -130,6 +140,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 3</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -156,6 +167,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -168,6 +180,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -180,6 +195,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 4</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -206,6 +222,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -218,6 +235,8 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                            <button type="submit" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -230,6 +249,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 5</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -256,6 +276,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -268,6 +289,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+    
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -282,6 +306,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 1</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -308,6 +333,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -320,6 +346,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+    
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -333,6 +362,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 2</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -359,6 +389,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -371,6 +402,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+    
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -383,6 +417,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 3</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -409,6 +444,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -421,6 +457,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+    
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -433,6 +472,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 4</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -459,6 +499,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -471,6 +512,8 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                                                                        <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                            <button type="submit" class="btn btn-danger">Delete</button></td>
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
@@ -483,6 +526,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 5</b></h3>
+                        <a href="{{ route('siswa.create') }}" class="btn btn-success pull-right">+Tambah Data</a>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -509,6 +553,7 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -521,6 +566,9 @@
                                             <td>{{$data->id_kelas }}</td>
                                             <td>{{$data->jenis_kelamin }}</td>
                                             <td>{{$data->alamat }}</td>
+                                            <td> <button type="submit" class="btn btn-warning">Edit</button>
+                                                <button type="submit" class="btn btn-danger">Delete</button></td>
+    
                                         </tr>
                                         @endforeach                                        
                                     </tbody>
