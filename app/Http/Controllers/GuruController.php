@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Siswa;
 
 class GuruController extends Controller
 {
@@ -15,7 +16,8 @@ class GuruController extends Controller
     }
 
     public function datasiswa(){
-        return view('guru.datasiswa');
+        $data = Siswa::all();
+        return view('guru.datasiswa', ['siswa'=> $data]);
     }
 
     public function absensi(){
