@@ -43,7 +43,7 @@ class GuruController extends Controller
             // 'mapel' => 'required',
             // 'jenkel' => 'required',
             // 'alamat' => 'required|max:255',
-            'email' => 'required|unique:guru|email:dns',
+            'email' => 'required|email:dns',
             'password' => 'required|min:6'
         ]);
 
