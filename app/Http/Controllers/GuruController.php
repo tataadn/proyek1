@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Siswa;
+use App\Models\Guru;
 
 class GuruController extends Controller
 {
@@ -37,13 +37,18 @@ class GuruController extends Controller
     }
 
     public function store(Request $request){
+        // $validatedData = 
         $request->validate([
             'nama_guru' => 'required|max:255',
-            'mapel' => 'required',
-            'jenkel' => 'required',
-            'alamat' => 'required|max:255',
-            'nip' => 'required|unique:guru|integer|max:12',
+            // 'mapel' => 'required',
+            // 'jenkel' => 'required',
+            // 'alamat' => 'required|max:255',
+            'email' => 'required|unique:guru|email:dns',
             'password' => 'required|min:6'
         ]);
+
+        dd('alhamdulillah');
+
+        // Guru::create($validatedData);
     }
 }

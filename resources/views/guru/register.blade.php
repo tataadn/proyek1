@@ -30,11 +30,16 @@
 						<h4 class="mb-3 f-w-400">Register Guru</h4>
 						<form action="/register-guru" method="POST">
 							@csrf 
-						<div class="form-group mb-3"">
-							<label class="floating-label" for="nama_guru">Nama Guru</label>
-							<input type="text" class="form-control" id="nama_guru" placeholder="">
-						</div>
 						<div class="form-group mb-3">
+							<label class="floating-label @error('nama') is-invalid @enderror" for="nama_guru">Nama Guru</label>
+							<input type="text" name="nama" class="form-control" id="nama_guru" placeholder="" required value="{{ old('nama') }}">
+							@error('nama')
+								<div class="invalid-feedback">
+									Nama Guru tidak boleh kosong
+								</div>
+							@enderror
+						</div>
+						{{-- <div class="form-group mb-3">
 							<div class="row">
 									<div class="col-xl-3">
 										<input type="text" readonly class="form-control-plaintext" id="namaMapel" value="Mapel :">
@@ -74,19 +79,24 @@
 						<div class="form-group mb-3">
 								<label class="floating-label" for="Address">Alamat</label>
 								<input type="text" class="form-control" id="alamat" placeholder="">
-						</div>
+						</div> --}}
 						<div class="form-group mb-3">
-								<label class="floating-label @error('nip') is-invalid @enderror" for="id_guru">NIP</label>
-								<input type="text" class="form-control" id="id_guru" placeholder="">
-								@error('nip')
+								<label class="floating-label @error('email') is-invalid @enderror" for="id_guru">Email</label>
+								<input type="email" name="email" class="form-control" id="id_guru" placeholder="" required value="{{ old('email') }}">
+								@error('email')
 								<div class="invalid-feedback">
-									NIP harus berupa angka
+									Email anda tidak sesuai
 								</div>
 								@enderror
 							</div>
 						<div class="form-group mb-4">
-								<label class="floating-label" for="password">Password</label>
-								<input type="password" class="form-control" id="password" placeholder="">
+								<label class="floating-label @error('password') is-invalid @enderror" for="password">Password</label>
+								<input type="password" name="password" class="form-control" id="password" placeholder="" required>
+								@error('password')
+								<div class="invalid-feedback">
+									Password harus terdiri dari 6 karakter
+								</div>
+								@enderror
 						</div>
 
 						<button class="btn btn-primary btn-block mb-4">DAFTAR</button>
