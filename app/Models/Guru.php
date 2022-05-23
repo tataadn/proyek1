@@ -9,10 +9,12 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 
-class User extends Authenticatable
+class Guru extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
 
+    protected $table = 'guru';
+    protected $primary = 'nip';
     /**
      * The attributes that are mass assignable.
      *
@@ -48,10 +50,10 @@ class User extends Authenticatable
      * @param  string  $value
      * @return \Illuminate\Database\Eloquent\Casts\Attribute
      */
-    protected function role(): Attribute
-    {
-        return new Attribute(
-            get: fn ($value) =>  ["siswa", "guru"][$value],
-        );
-    }
+   // protected function role(): Attribute
+    //{
+        //return new Attribute(
+            //get: fn ($value) =>  ["siswa", "guru"][$value],
+       // );
+    //}
 }

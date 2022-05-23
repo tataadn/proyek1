@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Guru;
 use App\Models\Siswa;
+use Illuminate\Support\Facades\Hash;
 
 class GuruController extends Controller
 {
@@ -47,8 +48,6 @@ class GuruController extends Controller
             'email' => 'required|email:dns',
             'password' => 'required|min:6'
         ]);
-
-        dd('alhamdulillah');
 
         // Guru::create($validatedData);
     }
