@@ -18,8 +18,8 @@ return new class extends Migration
             $table->string('hari',10);
             $table->string('id_kelas',10);
             $table->foreign('id_kelas')->references('id_kelas')->on('kelas');
-            $table->string('email');
-            $table->foreign('email')->references('email')->on('guru');
+            $table->bigInteger('nip');
+            $table->foreign('nip')->references('nip')->on('guru');
         });
     }
 

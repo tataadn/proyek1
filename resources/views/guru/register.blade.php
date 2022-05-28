@@ -31,6 +31,16 @@
 						<form action="/register-guru" method="POST">
 							@csrf 
 						<div class="form-group mb-3">
+							<label class="floating-label @error('nip') is-invalid @enderror" for="nip">NIP Guru</label>
+							<input type="text" name="nip" class="form-control" id="nip" placeholder="" required value="{{ old('nip') }}">
+							@error('nip')
+								<div class="invalid-feedback">
+									NIP anda tidak valid / tidak boleh kosong
+								</div>
+							@enderror
+						</div>
+
+						<div class="form-group mb-3">
 							<label class="floating-label @error('nama') is-invalid @enderror" for="nama_guru">Nama Guru</label>
 							<input type="text" name="nama" class="form-control" id="nama_guru" placeholder="" required value="{{ old('nama') }}">
 							@error('nama')
@@ -39,56 +49,61 @@
 								</div>
 							@enderror
 						</div>
-						{{-- <div class="form-group mb-3">
+
+						<div class="form-group mb-3">
 							<div class="row">
 									<div class="col-xl-3">
-										<input type="text" readonly class="form-control-plaintext" id="namaMapel" value="Mapel :">
-							</div>
-								<div class="col-xl-9">
-										<select class="form-control" id="mapel">
-											<option>PAI</option>
-											<option>PKN</option>
-											<option>Bahasa Indonesia</option>
-											<option>Bahasa Inggris</option>
-											<option>Matematika Wajib</option>
-											<option>Matematika Peminatan</option>
-											<option>Fisika</option>
-											<option>Biologi</option>
-											<option>Kimia</option>
-											<option>Geografi</option>
-											<option>Ekonomi</option>
-											<option>Sejarah</option>
-											<option>Sosiologi</option>
+										<label class=" @error('nama') is-invalid @enderror" for="nama_guru">Mapel</label>
+									</div>
+									<div class="col-xl-9">
+										<select name="mapel" class="form-select @error('mapel') is-invalid @enderror" aria-label="Default select example" required autocomplete="mapel" autofocus>
+											<option value="bindo">Bahasa Indonesia</option>
+											<option value="bing">Bahasa Inggris</option>
+											<option value="bio">Biologi</option>
+											<option value="eko">Ekonomi</option>
+											<option value="fis">Fisika</option>
+											<option value="geo">Geografi</option>
+											<option value="kim">Kimia</option>
+											<option value="mat_p">Matematika Peminatan</option>
+											<option value="mat_w">Matematika Wajib</option>
+											<option value="pai">Pendidikan Agama Islam</option>
+											<option value="pkn">Pendidikan Kewarganegaraan</option>
+											<option value="sej">Sejarah</option>
+											<option value="sos">Sosiologi</option>
 										</select>
-								</div>
+									</div>
 							</div>
 						</div>
+
 						<div class="form-group mb-3">
 								<div class="row">
 									<div class="col-xl-5">
 										<input type="text" readonly class="form-control-plaintext" id="teksJk" value="Jenis Kelamin :">
 									</div>
 									<div class="col-xl-7">
-										<select class="form-control" id="jenkel">
-											<option>Laki-laki</option>
-											<option>Perempuan</option>
+										<select name="jenkel" class="form-select @error('jenkel') is-invalid @enderror" aria-label="Default select example" required autocomplete="jenkel" autofocus>
+											<option value="laki-laki">laki-laki</option>
+											<option value="Wanita">Wanita</option>
 										</select>
 									</div>
 								</div>
+						</div>
+
+						<div class="form-group mb-3">
+							<label class="floating-label @error('email') is-invalid @enderror" for="email">Email</label>
+							<input type="email" name="email" class="form-control" id="email" placeholder="" required value="{{ old('email') }}" autocomplete="email">
+							@error('email')
+							<div class="invalid-feedback">
+								Email anda tidak sesuai / tidak boleh kosong
 							</div>
+							@enderror
+						</div>
+
 						<div class="form-group mb-3">
 								<label class="floating-label" for="Address">Alamat</label>
-								<input type="text" class="form-control" id="alamat" placeholder="">
-						</div> --}}
-						<div class="form-group mb-3">
-								<label class="floating-label @error('email') is-invalid @enderror" for="id_guru">Email</label>
-								<input type="email" name="email" class="form-control" id="id_guru" placeholder="" required value="{{ old('email') }}">
-								@error('email')
-								<div class="invalid-feedback">
-									Email anda tidak sesuai
-								</div>
-								@enderror
-							</div>
+								<input type="text" name="alamat" class="form-control" id="alamat" placeholder="">
+						</div>
+						
 						<div class="form-group mb-4">
 								<label class="floating-label @error('password') is-invalid @enderror" for="password">Password</label>
 								<input type="password" name="password" class="form-control" id="password" placeholder="" required>

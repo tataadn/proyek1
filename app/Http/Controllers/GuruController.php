@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Guru;
 use App\Models\Siswa;
+use App\Models\Mapel;
 use Illuminate\Support\Facades\Hash;
 
 class GuruController extends Controller
@@ -39,15 +40,17 @@ class GuruController extends Controller
     }
 
     public function store(Request $request){
-        // $validatedData = 
-        $request->validate([
+        $validatedData = $request->validate([
+            'nip' => 'required|integer|unique:guru',
             'nama_guru' => 'required|max:255',
-            // 'mapel' => 'required',
-            // 'jenkel' => 'required',
-            // 'alamat' => 'required|max:255',
+            'mapel' => 'required',
+            'jenkel' => 'required',
+            'alamat' => 'required|max:255',
             'email' => 'required|email:dns',
             'password' => 'required|min:6'
         ]);
+
+        Guru::create($validatedData);
 
         // Guru::create($validatedData);
     }

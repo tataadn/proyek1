@@ -21,8 +21,12 @@ class Guru extends Authenticatable
      * @var array<int, string>
      */
     protected $fillable = [
-        'nama_guru',
-        'email',
+        'nip', 
+        'nama_guru', 
+        'mapel', 
+        'jenkel', 
+        'alamat', 
+        'email', 
         'password',
     ];
 
