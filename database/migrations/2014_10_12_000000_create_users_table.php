@@ -15,12 +15,14 @@ return new class extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->id();
+            $table->string('role')->default('siswa');
+            $table->string('noid');
             $table->string('name');
+            $table->string('jenkel');
+            $table->string('alamat');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['guru', 'siswa'])->default('siswa');
-            /* Users: 0=>Siswa, 1=>Guru */
             $table->rememberToken();
             $table->timestamps();
         });

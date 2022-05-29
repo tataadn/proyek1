@@ -1,8 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\GuruController;
-use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\Guru\Auth\RegisteredUserController;
+use App\Http\Controllers\Guru\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Guru\Auth\GuruController;
+
+
+use App\Http\Controllers\Siswa\Auth\RegisteredUserControllers;
+use App\Http\Controllers\Siswa\Auth\AuthenticatedSessionControllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,21 +24,42 @@ Route::get('/', function () {
     return view('index');
 });
 
-// Routes for Siswa
-Route::get('/login-siswa', [SiswaController::class, 'login']);
-Route::get('/register-siswa', [SiswaController::class, 'register']);
-Route::get('/siswa', [SiswaController::class, 'index']);
-Route::get('/siswa-profile', [SiswaController::class, 'profile']);
-Route::get('/siswa-absen', [SiswaController::class, 'absen']);
-Route::get('/siswa-history', [SiswaController::class, 'history']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-//Routes for Guru
-Route::get('/login-guru', [GuruController::class, 'login']);
-Route::get('/register-guru', [GuruController::class, 'register']);
-Route::post('/register-guru', [GuruController::class, 'store']);
-Route::get('/guru', [GuruController::class, 'index']);
-Route::get('/guru-profile', [GuruController::class, 'profile']);
-Route::get('/guru-data', [GuruController::class, 'datasiswa']);
-Route::get('/tambah-siswa',[GuruController::class, 'createsiswa'])->name('siswa.create');
-Route::get('/guru-absensi', [GuruController::class, 'absensi']);
-Route::get('/guru-rekap', [GuruController::class, 'rekap']);
+require __DIR__.'/auth.php';
+
+//halaman Guru
+
+Route::namespace('Guru')->prefix('guru')->name('guru.')->group(function () {
+    Route::namespace('Auth')->group(function () {
+        //login Guru
+        Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
+        Route::post('login', [AuthenticatedSessionController::class, 'store'])->name('guruLogin');
+
+        //register Guru
+        Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
+        Route::post('register', [RegisteredUserController::class, 'store'])->name('guruRegister');
+
+        Route::get('/dashboard', function () {
+            return view('guru.dashboard');
+        })->middleware(['auth'])->name('dashboard');
+    });
+});
+
+Route::namespace('Siswa')->prefix('siswa')->name('siswa.')->group(function () {
+    Route::namespace('Auth')->group(function () {
+        //login siswa
+        Route::get('login', [AuthenticatedSessionControllers::class, 'create'])->name('login');
+        Route::post('login', [AuthenticatedSessionControllers::class, 'store'])->name('siswaLogin');
+
+        //register Guru
+        Route::get('register', [RegisteredUserControllers::class, 'create'])->name('register');
+        Route::post('register', [RegisteredUserControllers::class, 'store'])->name('siswaRegister');
+
+        Route::get('/dashboard', function () {
+            return view('siswa.dashboard');
+        })->middleware(['auth'])->name('dashboard');
+    });
+});

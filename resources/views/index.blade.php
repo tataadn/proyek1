@@ -40,15 +40,15 @@
                     <li class="nav-item pcoded-hasmenu">
                         <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-users"></i></span><span class="pcoded-mtext">Siswa</span></a>
                         <ul class="pcoded-submenu">
-                            <li><a href="/login-siswa">Login</a></li>
-                            <li><a href="/register-siswa">Registrasi</a></li>
+                            <li><a href="{{ route('siswa.login') }}">Login</a></li>
+                            <li><a href="{{ route('siswa.register') }}">Registrasi</a></li>
                         </ul>
                     </li>
                     <li class="nav-item pcoded-hasmenu">
                         <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Guru</span></a>
                         <ul class="pcoded-submenu">
-                            <li><a href="/login-guru">Login</a></li>
-                            <li><a href="/register-guru">Registrasi</a></li>
+                            <li><a href="{{ route('guru.login') }}">Login</a></li>
+                            <li><a href="{{ route('guru.register') }}">Registrasi</a></li>
                         </ul>
                     </li>
                 </ul>
