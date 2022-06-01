@@ -41,15 +41,26 @@
                 </label>
             </div>
 
-            <div class="flex items-center justify-end mt-4">
+            <div class="flex items-center justify-center mt-4">
+                {{-- <a class="underline text-md text-gray-600 hover:text-gray-900 ml-4" href="/">
+                    {{ __('Kembali ke Dashboard') }}
+                </a>
+
+                <a class="underline text-md text-gray-600 hover:text-gray-900" href="{{ route('siswa.siswaLogin') }}">
+                    {{ __('Belum punya akun?') }}
+                </a> --}}
+                <a class="underline text-md text-gray-600 hover:text-gray-900" href="/">
+                    {{ __('Kembali ke Dashboard') }}
+                </a>
+
                 @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
+                    <a class="underline text-md text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
                         {{ __('Forgot your password?') }}
                     </a>
                 @endif
 
                 <x-button class="ml-3">
-                    {{ __('Log in') }}
+                    {{ __('Login') }}
                 </x-button>
             </div>
         </form>

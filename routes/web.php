@@ -67,12 +67,25 @@ Route::namespace('Siswa')->prefix('siswa')->name('siswa.')->group(function () {
         Route::get('login', [AuthenticatedSessionControllers::class, 'create'])->name('login');
         Route::post('login', [AuthenticatedSessionControllers::class, 'store'])->name('siswaLogin');
 
-        //register Guru
+        //register siswa
         Route::get('register', [RegisteredUserControllers::class, 'create'])->name('register');
         Route::post('register', [RegisteredUserControllers::class, 'store'])->name('siswaRegister');
 
+        //Halaman Siswa
         Route::get('/dashboard', function () {
             return view('siswa.dashboard');
         })->middleware(['auth'])->name('dashboard');
+
+        Route::get('/profile', function () {
+            return view('siswa.profile');
+        })->middleware(['auth'])->name('profile');
+
+        Route::get('/absensi', function () {
+            return view('siswa.absen');
+        })->middleware(['auth'])->name('absensi');
+
+        Route::get('/history', function () {
+            return view('siswa.history');
+        })->middleware(['auth'])->name('history');
     });
 });

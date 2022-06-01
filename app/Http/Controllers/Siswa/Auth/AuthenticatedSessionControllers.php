@@ -29,6 +29,10 @@ class AuthenticatedSessionControllers extends Controller
      */
     public function store(LoginRequest $request)
     {
+        // if (Auth::guard('siswa')->attempt($request->only('email', 'password'))) {
+        //     Alert::success('Selamat Datang', 'Anda Berhasil Login');
+        //     return redirect()->route('siswa.dashboard');
+        // }
         $request->authenticate();
 
         $request->session()->regenerate();

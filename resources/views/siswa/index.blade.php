@@ -49,16 +49,16 @@
                     <div class="card-body">
                         <div class="row p-3">
                             <div class="col-md-5 text-center">
-                                <img src="{{ asset('assets/images/user/user.jpg') }}" alt="User" width="180">
+                                <img src="assets/images/user/user.jpg" alt="User" width="180">
                             </div>
                             <div class="col-md-7">
                                 <br>
-                                <h6 style="line-height: 3ch">{{ Auth::user()->name }} <br>
-                                    raranasujae@gmail.com <br>
+                                <h6 style="line-height: 3ch">{{ Auth::user()->name }}<br>
+                                    {{-- - <br>
                                     MIPA-I <br>
                                     Perempuan <br>
                                     Perumahan Oce Blok B2 Surabaya Barat <br>
-                                    Narara123 <br>
+                                    Narara123 <br> --}}
                                 </h6>
                             </div>
                         </div>
@@ -107,7 +107,7 @@
                             <div class="col">
                                 <br>
                                 <h5 style="line-height: 1cm">
-                                    Hai, {{ Auth::user()->name }} jangan lupa absen! <br>
+                                    Hai, Rara jangan lupa absen! <br>
                                     Absensi adalah suatu bentuk pendataan presensi atau kehadiran seorang atau pegawai yang merupakan bagian pelaporan dari suatu institusi yang berisi data-data status kehadiran yang disusun dan diatur secara rapi dan mudah untuk di cari dan digunakan apabila sewaktu-waktu diperlukan oleh pihak berkepentingan
                                 </h5>
                             </div>
@@ -122,21 +122,3 @@
 </div>
 
 @endsection
-
-{{-- <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
-
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    HI STUDENT! HAPPY STUDY AND HAVE FUN!
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout> --}}
