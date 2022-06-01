@@ -11,10 +11,10 @@
     <meta name="keywords" content="">
     <meta name="author" content="Phoenixcoded" />
     <!-- Favicon icon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/images/favicon.ico') }}" type="image/x-icon">
 
     <!-- vendor css -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 <body class="">
 	<!-- [ Pre-loader ] start -->
@@ -31,9 +31,9 @@
 				
 				<div class="">
 					<div class="main-menu-header">
-						<img class="img-radius" src="assets/images/user/user.jpg" alt="User-Profile-Image">
+						<img class="img-radius" src="{{ asset('assets/images/user/user.jpg') }}" alt="User-Profile-Image">
 						<div class="user-details">
-							<div id="more-details">Nama Guru</div>
+							<div id="more-details">{{ Auth::user()->name }}</div>
 						</div>
 					</div>
 				</div>
@@ -43,16 +43,16 @@
 					    <label>Navigasi</label>
 					</li>
 					<li class="nav-item">
-					    <a href="/guru" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
+					    <a href="{{ route('guru.dashboard') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item">
-					    <a href="/guru-profile" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profil</span></a>
+					    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profil</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Kelola Siswa</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="/guru-data">Data Siswa</a></li>
-					        <li><a href="/guru-absensi">Data Absensi Siswa</a></li>
+					        <li><a href="#">Data Siswa</a></li>
+					        <li><a href="#">Data Absensi Siswa</a></li>
 					    </ul>
 					</li>
 				</ul>
@@ -64,10 +64,10 @@
 	<header class="navbar pcoded-header navbar-expand-lg navbar-light header-blue">
 				<div class="m-header">
 					<a class="mobile-menu" id="mobile-collapse" href="#!"><span></span></a>
-					<a href="/guru" class="b-brand">
+					<a href="{{ route('dashboard') }}" class="b-brand">
 						<!-- ========   change your logo hear   ============ -->
-						<img src="assets/images/ma-maarif.png" alt="" class="logo">
-						<img src="assets/images/logo-icon.png" alt="" class="logo-thumb">
+						<img src="{{ asset('assets/images/ma-maarif.png') }}" alt="" class="logo">
+						<img src="{{ asset('assets/images/logo-icon.png') }}" alt="" class="logo-thumb">
 					</a>
 					<a href="#!" class="mob-toggler">
 						<i class="feather icon-more-vertical"></i>
@@ -93,11 +93,22 @@
 								</a>
 								<div class="dropdown-menu dropdown-menu-right profile-notification">
 									<div class="pro-head">
-										<img src="assets/images/user/user.jpg" class="img-radius" alt="User-Profile-Image">
-										<span>Rara Nasution</span>
+										<img src="{{ asset('assets/images/user/user.jpg') }}" class="img-radius" alt="User-Profile-Image">
+										<span>{{ Auth::user()->name }}</span>
 									</div>
 									<ul class="pro-body">
-										<li><a href="/login-guru" class="dropdown-item"><i class="feather icon-log-out"></i>Logout</a></li>
+										<li>
+											<form method="POST" action="{{ route('logout') }}">
+												@csrf
+							
+												<x-responsive-nav-link :href="route('logout')"
+														onclick="event.preventDefault();
+																	this.closest('form').submit();" class="dropdown-item">
+																	<i class="feather icon-log-out"></i>
+													{{ __('Log Out') }}
+												</x-responsive-nav-link>
+											</form>
+										</li>
 									</ul>
 								</div>
 							</div>
@@ -113,19 +124,19 @@
 @yield('contents')
 
 <!-- Required Js -->
-<script src="assets/js/vendor-all.min.js"></script>
-<script src="assets/js/plugins/bootstrap.min.js"></script>
-<script src="assets/js/ripple.js"></script>
-<script src="assets/js/pcoded.min.js"></script>
+<script src="{{ asset('assets/js/vendor-all.min.js') }}"></script>
+<script src="{{ asset('assets/js/plugins/bootstrap.min.js') }}"></script>
+<script src="{{ asset('assets/js/ripple.js') }}"></script>
+<script src="{{ asset('assets/js/pcoded.min.js') }}"></script>
 
 <!-- JavaScript Lokasi -->
-<script src="script.js"></script>
+<script src="{{ asset('script.js') }}"></script>
 
 <!-- Apex Chart -->
-<script src="assets/js/plugins/apexcharts.min.js"></script>
+<script src="{{ asset('assets/js/plugins/apexcharts.min.js') }}"></script>
 
 <!-- custom-chart js -->
-<script src="assets/js/pages/dashboard-main.js"></script>
+<script src="{{ asset('assets/js/pages/dashboard-main.js') }}"></script>
 </body>
 
 </html>

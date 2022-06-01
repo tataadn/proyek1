@@ -45,6 +45,10 @@ Route::namespace('Guru')->prefix('guru')->name('guru.')->group(function () {
         Route::get('/dashboard', function () {
             return view('guru.dashboard');
         })->middleware(['auth'])->name('dashboard');
+
+        Route::get('/index', function () {
+            return view('guru.index');
+        })->middleware(['auth'])->name('index');
     });
 });
 
