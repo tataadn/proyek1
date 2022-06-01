@@ -20,6 +20,9 @@ class RouteServiceProvider extends ServiceProvider
     public const HOME = '/dashboard';
     public const GURU_HOME = '/guru/dashboard';
     public const GURU_REGISTER = '/guru/register';
+    public const GURU_PROFILE = '/guru/profile';
+    public const GURU_DATASISWA = '/guru/datasiswa';
+    public const GURU_ABSENSISISWA = '/guru/absensisiswa';
     public const SISWA_HOME = '/siswa/dashboard';
     public const SISWA_REGISTER = '/siswa/register';
 
@@ -37,9 +40,11 @@ class RouteServiceProvider extends ServiceProvider
         $this->routes(function () {
             Route::middleware('api')
                 ->prefix('api')
+                ->namespace($this->namespace)
                 ->group(base_path('routes/api.php'));
 
             Route::middleware('web')
+            ->namespace($this->namespace)
                 ->group(base_path('routes/web.php'));
         });
     }

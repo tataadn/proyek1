@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guru\Auth\RegisteredUserController;
 use App\Http\Controllers\Guru\Auth\AuthenticatedSessionController;
-use App\Http\Controllers\Guru\Auth\GuruController;
 
+use App\Http\Controllers\Guru\Auth\GuruController;
 
 use App\Http\Controllers\Siswa\Auth\RegisteredUserControllers;
 use App\Http\Controllers\Siswa\Auth\AuthenticatedSessionControllers;
@@ -42,13 +42,22 @@ Route::namespace('Guru')->prefix('guru')->name('guru.')->group(function () {
         Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
         Route::post('register', [RegisteredUserController::class, 'store'])->name('guruRegister');
 
+        //Halaman Guru
         Route::get('/dashboard', function () {
             return view('guru.dashboard');
         })->middleware(['auth'])->name('dashboard');
 
-        Route::get('/index', function () {
-            return view('guru.index');
-        })->middleware(['auth'])->name('index');
+        Route::get('profile', function () {
+            return view('guru.profile');
+        })->middleware(['auth'])->name('profil');
+
+        Route::get('/datasiswa', function () {
+            return view('guru.datasiswa');
+        })->middleware(['auth'])->name('datasiswa');
+
+        Route::get('/absensisiswa', function () {
+            return view('guru.absensi');
+        })->middleware(['auth'])->name('absensisiswa');
     });
 });
 

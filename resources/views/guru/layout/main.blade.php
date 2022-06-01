@@ -46,13 +46,13 @@
 					    <a href="{{ route('guru.dashboard') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item">
-					    <a href="#" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profil</span></a>
+					    <a href="{{ url('guru/profile') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-user"></i></span><span class="pcoded-mtext">Akun Profil</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Kelola Siswa</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="#">Data Siswa</a></li>
-					        <li><a href="#">Data Absensi Siswa</a></li>
+					        <li><a href="{{ route('guru.datasiswa') }}">Data Siswa</a></li>
+					        <li><a href="{{ route('guru.absensisiswa') }}">Data Absensi Siswa</a></li>
 					    </ul>
 					</li>
 				</ul>
