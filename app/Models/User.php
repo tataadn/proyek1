@@ -21,6 +21,7 @@ class User extends Authenticatable
         'role',
         'noid',
         'name',
+        'kategori',
         'jenkel',
         'alamat',
         'email',

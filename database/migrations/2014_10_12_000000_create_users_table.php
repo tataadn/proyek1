@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('role')->default('siswa');
             $table->string('noid');
             $table->string('name');
+            $table->string('kategori');
             $table->string('jenkel');
             $table->string('alamat');
             $table->string('email')->unique();

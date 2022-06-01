@@ -31,6 +31,17 @@
                 <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus />
             </div>
 
+            <!-- Kategori -->
+            <div class="mb-4">
+                <x-label for="kategori" :value="__('Kelas')" />
+                <select id="kategori" class="form-select block mt-1 w-full" name="kategori" required aria-label="Default select example">
+                    <option value="A1">10 MIPA 1</option>
+                    <option value="A2">10 MIPA 2</option>
+                    <option value="S1">10 IPS 2</option>
+                    <option value="S2">10 IPS 2</option>
+                </select>
+            </div>
+
             <!-- Jenkel -->
             <div class="mb-4">
                 <x-label for="jenkel" :value="__('Jenkel')" />
