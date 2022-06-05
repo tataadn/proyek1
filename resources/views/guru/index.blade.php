@@ -32,7 +32,7 @@
                             <div class="col">
                                 <br>
                                 <h5 style="line-height: 1cm">
-                                    TATA CANTIK INSTRINYA TAEHYUNG
+                                    TATA CANTIK ISTRINYA TAEHYUNG
                                     ANAKNYA PAK ADNAN
                                 </h5>
                             </div>
