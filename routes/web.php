@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Guru\Auth\RegisteredUserController;
 use App\Http\Controllers\Guru\Auth\AuthenticatedSessionController;
+use App\Http\Controllers\Guru\Auth\EmailVerificationPromptController;
+use App\Http\Controllers\Guru\Auth\VerifyEmailController;
+use App\Http\Controllers\Guru\Auth\EmailVerificationNotificationController;
 
 use App\Http\Controllers\Guru\Auth\GuruController;
 
@@ -37,6 +40,18 @@ Route::namespace('Guru', )->prefix('guru')->name('guru.')->group(function () {
         //register Guru
         Route::get('register', [RegisteredUserController::class, 'create'])->name('register');
         Route::post('register', [RegisteredUserController::class, 'store'])->name('guruRegister');
+
+        //verifikasi guru
+        Route::get('verify-email', [EmailVerificationPromptController::class, '__invoke'])
+                ->name('verification.notice');
+
+        Route::get('verify-email/{id}/{hash}', [VerifyEmailController::class, '__invoke'])
+                    ->middleware(['signed', 'throttle:6,1'])
+                    ->name('verification.verify');
+
+        Route::post('email/verification-notification', [EmailVerificationNotificationController::class, 'store'])
+                ->middleware('throttle:6,1')
+                ->name('verification.send');
 
         //Halaman Guru
         Route::middleware(['auth', 'verified'])->group(function () {
