@@ -24,15 +24,11 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
-
 require __DIR__.'/auth.php';
 
 //halaman Guru
 
-Route::namespace('Guru')->prefix('guru')->name('guru.')->group(function () {
+Route::namespace('Guru', )->prefix('guru')->name('guru.')->group(function () {
     Route::namespace('Auth')->group(function () {
         //login Guru
         Route::get('login', [AuthenticatedSessionController::class, 'create'])->name('login');
@@ -43,21 +39,23 @@ Route::namespace('Guru')->prefix('guru')->name('guru.')->group(function () {
         Route::post('register', [RegisteredUserController::class, 'store'])->name('guruRegister');
 
         //Halaman Guru
-        Route::get('/dashboard', function () {
-            return view('guru.dashboard');
-        })->middleware(['auth'])->name('dashboard');
-
-        Route::get('profile', function () {
-            return view('guru.profile');
-        })->middleware(['auth'])->name('profil');
-
-        Route::get('/datasiswa', function () {
-            return view('guru.datasiswa');
-        })->middleware(['auth'])->name('datasiswa');
-
-        Route::get('/absensisiswa', function () {
-            return view('guru.absensi');
-        })->middleware(['auth'])->name('absensisiswa');
+        Route::middleware(['auth', 'verified'])->group(function () {
+            Route::get('/dashboard', function () {
+                return view('guru.dashboard');
+            })->middleware(['auth'])->name('dashboard');
+    
+            Route::get('profile', function () {
+                return view('guru.profile');
+            })->middleware(['auth'])->name('profil');
+    
+            Route::get('/datasiswa', function () {
+                return view('guru.datasiswa');
+            })->middleware(['auth'])->name('datasiswa');
+    
+            Route::get('/absensisiswa', function () {
+                return view('guru.absensi');
+            })->middleware(['auth'])->name('absensisiswa');
+        });
     });
 });
 
@@ -72,20 +70,30 @@ Route::namespace('Siswa')->prefix('siswa')->name('siswa.')->group(function () {
         Route::post('register', [RegisteredUserControllers::class, 'store'])->name('siswaRegister');
 
         //Halaman Siswa
-        Route::get('/dashboard', function () {
-            return view('siswa.dashboard');
-        })->middleware(['auth'])->name('dashboard');
-
-        Route::get('/profile', function () {
-            return view('siswa.profile');
-        })->middleware(['auth'])->name('profile');
-
-        Route::get('/absensi', function () {
-            return view('siswa.absen');
-        })->middleware(['auth'])->name('absensi');
-
-        Route::get('/history', function () {
-            return view('siswa.history');
-        })->middleware(['auth'])->name('history');
+        Route::middleware(['auth', 'verified'])->group(function () {
+            Route::get('/dashboard', function () {
+                return view('siswa.dashboard');
+            })->middleware(['auth'])->name('dashboard');
+    
+            Route::get('/profile', function () {
+                return view('siswa.profile');
+            })->middleware(['auth'])->name('profile');
+    
+            Route::get('/absensi', function () {
+                return view('siswa.absen');
+            })->middleware(['auth'])->name('absensi');
+    
+            Route::get('/history', function () {
+                return view('siswa.history');
+            })->middleware(['auth'])->name('history');
+        });
     });
 });
+
+// Route::get('/verifikasi', function () {
+//     return view('verifikasi');
+// });
+
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth'])->name('dashboard');

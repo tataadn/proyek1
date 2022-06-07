@@ -26,6 +26,8 @@ class RouteServiceProvider extends ServiceProvider
     public const SISWA_HOME = '/siswa/dashboard';
     public const SISWA_REGISTER = '/siswa/register';
 
+    public const VERIFIKASI = '/verifikasi';
+
     protected $namespace = 'App\Http\Controllers';
 
     /**

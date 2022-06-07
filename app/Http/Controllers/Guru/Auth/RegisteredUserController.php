@@ -60,7 +60,8 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        Alert::success('Berhasil!', 'Akun anda berhasil diregistrasi!');
-        return redirect('guru/register');
+        // Alert::success('Berhasil!', 'Akun anda berhasil diregistrasi!');
+        return redirect('guru/dashboard');
+        // return redirect(RouteServiceProvider::VERIFIKASI);
     }
 }

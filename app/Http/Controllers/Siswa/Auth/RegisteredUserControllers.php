@@ -60,8 +60,8 @@ class RegisteredUserControllers extends Controller
 
         Auth::login($user);
 
-        Alert::success('Berhasil!', 'Akun anda berhasil diregistrasi!');
-        return redirect('siswa/register');
-        // return redirect(RouteServiceProvider::SISWA_REGISTER)->with('success', 'Task Created Successfully!');
+        // Alert::success('Berhasil!', 'Akun anda berhasil diregistrasi!');
+        return redirect('siswa/dashboard');
+        // return redirect(RouteServiceProvider::VERIFIKASI);
     }
 }
