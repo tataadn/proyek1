@@ -17,7 +17,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    public const HOME = '/dashboard';
+    public const HOME = '/';
     public const GURU_HOME = '/guru/dashboard';
     public const GURU_REGISTER = '/guru/register';
     public const GURU_LOGIN = '/guru/login';
@@ -27,7 +27,7 @@ class RouteServiceProvider extends ServiceProvider
     public const SISWA_REGISTER = '/siswa/register';
     public const SISWA_LOGIN = '/siswa/login';
 
-    public const VERIFIKASI = '/verifikasi';
+    public const VERIFIKASI = '/verify-success';
 
     protected $namespace = 'App\Http\Controllers';
 
