@@ -54,7 +54,7 @@
                             <div class="col-md-7">
                                 <br>
                                 <h6 style="line-height: 3ch">{{ Auth::user()->name }} <br>
-                                    raranasujae@gmail.com <br>
+                                    {{ Auth::user()->email }}  <br>
                                     MIPA-I <br>
                                     Perempuan <br>
                                     Perumahan Oce Blok B2 Surabaya Barat <br>

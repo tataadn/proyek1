@@ -37,13 +37,13 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <label class="floating-label" for="nama">Nama</label>
-                                        <input type="text" class="form-control" id="nama" placeholder="">
+                                        <input type="text" class="form-control" id="nama" placeholder="" readonly="readonly" value="{{ Auth::user()->name }}">
                                     </div>
                                 </div>
                                 <div class="col-sm-12 pt-3">
                                     <div class="form-group">
                                         <label class="floating-label" for="kelas">Kelas</label>
-                                        <input type="text" class="form-control" id="kelas" placeholder="">
+                                        <input type="text" class="form-control" id="nama" placeholder="" readonly="readonly" value="{{ Auth::user()->kategori }}">
                                     </div>
                                 </div>
                                 <div class="col-sm-12 pt-3">
