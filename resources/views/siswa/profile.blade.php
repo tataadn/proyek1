@@ -39,10 +39,9 @@
                                         <h5 style="line-height: 3ch">
                                             {{ Auth::user()->name }}<br>
                                             {{ Auth::user()->email }}<br>
-                                            MIPA-I <br>
+                                            {{ Auth::user()->kategori }}<br>
                                             Perempuan <br>
-                                            Perumahan Oce Blok B2 Surabaya Barat <br>
-                                            Narara123 <br>
+                                            {{ Auth::user()->alamat }} <br>
                                         </h5>
                                     </div>
                                 </div>

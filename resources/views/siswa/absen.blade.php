@@ -48,20 +48,44 @@
                                 </div>
                                 <div class="col-sm-12 pt-3">
                                     <div class="form-group">
-                                        <label class="floating-label" for="password">Mata Pelajaran</label>
-                                        <input type="text" class="form-control" id="password" placeholder="">
+                                        <label for="matapelajaran">Mata Pelajaran</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option value="bindo">Bahasa Indonesia</option>
+                                            <option value="bing">Bahasa Inggris</option>
+                                            <option value="bio">Biologi</option>
+                                            <option value="eko">Ekonomi</option>
+                                            <option value="fis">Fisika</option>
+                                            <option value="geo">Geografi</option>
+                                            <option value="kim">Kimia</option>
+                                            <option value="mat_p">Matematika Peminatan</option>
+                                            <option value="mat_w">Matematika Wajib</option>
+                                            <option value="pai">Pendidikan Agama Islam</option>
+                                            <option value="pkn">Pendidikan Kewarganegaraan</option>
+                                            <option value="sej">Sejarah</option>
+                                            <option value="sos">Sosiologi</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-sm-3 pt-4">
-									<button type="button" class="btn btn-primary" onclick="getLocation()">Lokasi Anda</button>
-								</div>
-								<div class="col-sm-9 pt-4">
+                                <div class="col-sm-12 pt-3">
+                                    <div class="form-group">
+                                        <div class="input-group mb-3">
+                                            <h4 class="form-control" aria-describedby="basic-addon2" id="location" name="location"></h4>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-primary" type="button" onclick="getLocation()">Lokasi Anda</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {{-- <div class="col-sm-9 pt-4">
                                     <fieldset disabled="disabled">
                                         <div class="">
                                             <h5 id="location"></h5>
                                         </div>
                                     </fieldset>
-                                </div>
+								</div>
+								<div class="col-sm-3 pt-4">
+                                    <button type="button" class="btn btn-primary" onclick="getLocation()">Lokasi Anda</button>
+                                </div> --}}
                             </div>
                         </form>
 						<div class="row p-3 mt-3">
