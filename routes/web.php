@@ -7,7 +7,7 @@ use App\Http\Controllers\Guru\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\Guru\Auth\VerifyEmailController;
 use App\Http\Controllers\Guru\Auth\EmailVerificationNotificationController;
 
-use App\Http\Controllers\Guru\Auth\GuruController;
+use App\Http\Controllers\GuruController;
 
 use App\Http\Controllers\Siswa\Auth\RegisteredUserControllers;
 use App\Http\Controllers\Siswa\Auth\AuthenticatedSessionControllers;
@@ -48,21 +48,10 @@ Route::namespace('Guru', )->prefix('guru')->name('guru.')->group(function () {
 
         //Halaman Guru
         Route::middleware(['auth', 'verified'])->group(function () {
-            Route::get('/dashboard', function () {
-                return view('guru.dashboard');
-            })->middleware(['auth'])->name('dashboard');
-    
-            Route::get('profile', function () {
-                return view('guru.profile');
-            })->middleware(['auth'])->name('profil');
-    
-            Route::get('/datasiswa', function () {
-                return view('guru.datasiswa');
-            })->middleware(['auth'])->name('datasiswa');
-    
-            Route::get('/absensisiswa', function () {
-                return view('guru.absensi');
-            })->middleware(['auth'])->name('absensisiswa');
+            Route::get('/dashboard', [GuruController::class,'dashboard'])->middleware(['auth'])->name('dashboard');
+            Route::get('profile', [GuruController::class, 'profile'])->middleware(['auth'])->name('profil');
+            Route::get('/datasiswa', [GuruController::class,'datasiswa'])->middleware(['auth'])->name('datasiswa');
+            Route::get('/absensisiswa', [GuruController::class,'absensi'])->middleware(['auth'])->name('absensisiswa');
         });
     });
 });

@@ -57,22 +57,24 @@
                                         <th>Kelas</th>
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
+                                        <th>Email</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {{-- @foreach ($siswa as $data) --}}
+                                    @foreach ($datasiswa as $data)
                                     <tr>
-                                        {{-- <td>{{$loop->iteration }}</td>
-                                        <td>{{$data->nis }}</td>
-                                        <td>{{$data->nama_siswa }}</td>
-                                        <td>{{$data->id_kelas }}</td>
-                                        <td>{{$data->jenis_kelamin }}</td>
-                                        <td>{{$data->alamat }}</td> --}}
+                                        <td>{{$data->id}}</td>
+                                        <td>{{$data->noid }}</td>
+                                        <td>{{$data->name }}</td>
+                                        <td>{{$data->kategori }}</td>
+                                        <td>{{$data->jenkel }}</td>
+                                        <td>{{$data->alamat }}</td>
+                                        <td>{{$data->email }}</td>
                                         <td> <button type="submit" class="btn btn-warning">Edit</button>
                                             <button type="submit" class="btn btn-danger">Delete</button></td>
                                     </tr>
-                                    {{-- @endforeach --}}
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
