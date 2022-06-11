@@ -30,7 +30,7 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 1</b></h3>
-                        <a href="#" class="btn btn-success pull-right">+Tambah Data</a>
+                        {{-- <a href="#" class="btn btn-success pull-right">+Tambah Data</a> --}}
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -71,7 +71,6 @@
                                         <td>{{$data->alamat }}</td> --}}
                                         <td> <button type="submit" class="btn btn-warning">Edit</button>
                                             <button type="submit" class="btn btn-danger">Delete</button></td>
-
                                     </tr>
                                     {{-- @endforeach --}}
                                 </tbody>

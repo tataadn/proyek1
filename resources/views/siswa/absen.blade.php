@@ -36,6 +36,10 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group">
+                                        <label class="floating-label" for="noid">NIS</label>
+                                        <input type="text" class="form-control" id="noid" placeholder="" readonly="readonly" value="{{ Auth::user()->noid }}">
+                                    </div>
+                                    <div class="form-group">
                                         <label class="floating-label" for="nama">Nama</label>
                                         <input type="text" class="form-control" id="nama" placeholder="" readonly="readonly" value="{{ Auth::user()->name }}">
                                     </div>

@@ -35,7 +35,7 @@
             <div class="mb-4">
                 <x-label for="kategori" :value="__('Kelas')" />
                 <select id="kategori" class="form-select block mt-1 w-full" name="kategori" required aria-label="Default select example">
-                    <option value="bindo">Bahasa Indonesia</option>
+                        <option value="bindo">Bahasa Indonesia</option>
 						<option value="bing">Bahasa Inggris</option>
 						<option value="bio">Biologi</option>
 						<option value="eko">Ekonomi</option>
@@ -48,6 +48,7 @@
 						<option value="pkn">Pendidikan Kewarganegaraan</option>
 						<option value="sej">Sejarah</option>
 						<option value="sos">Sosiologi</option>
+						<option value="tim it">Tim IT</option>
                 </select>
             </div>
 

@@ -15,12 +15,11 @@ return new class extends Migration
     {
         Schema::create('siswas', function (Blueprint $table) {
             $table->id();
-            $table->string('role');
+            $table->string('nis');
             $table->string('name');
-            $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
-            $table->string('password');
-            $table->rememberToken();
+            $table->string('kelas');
+            $table->string('mapel');
+            $table->string('location');
             $table->timestamps();
         });
     }

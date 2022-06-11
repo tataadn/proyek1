@@ -11,6 +11,7 @@ use App\Http\Controllers\Guru\Auth\GuruController;
 
 use App\Http\Controllers\Siswa\Auth\RegisteredUserControllers;
 use App\Http\Controllers\Siswa\Auth\AuthenticatedSessionControllers;
+use App\Http\Controllers\SiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -78,21 +79,10 @@ Route::namespace('Siswa')->prefix('siswa')->name('siswa.')->group(function () {
 
         //Halaman Siswa
         Route::middleware(['auth', 'verified'])->group(function () {
-            Route::get('/dashboard', function () {
-                return view('siswa.dashboard');
-            })->middleware(['auth'])->name('dashboard');
-    
-            Route::get('/profile', function () {
-                return view('siswa.profile');
-            })->middleware(['auth'])->name('profile');
-    
-            Route::get('/absensi', function () {
-                return view('siswa.absen');
-            })->middleware(['auth'])->name('absensi');
-    
-            Route::get('/history', function () {
-                return view('siswa.history');
-            })->middleware(['auth'])->name('history');
+            Route::get('/dashboard', [SiswaController::class,'dashboard'])->middleware(['auth'])->name('dashboard');
+            Route::get('/profile', [SiswaController::class,'profile'])->middleware(['auth'])->name('profile');
+            Route::get('/absensi', [SiswaController::class,'absensi'])->middleware(['auth'])->name('absensi');
+            Route::get('/history', [SiswaController::class,'history'])->middleware(['auth'])->name('history');
         });
     });
 });
