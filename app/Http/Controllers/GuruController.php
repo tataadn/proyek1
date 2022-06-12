@@ -22,7 +22,6 @@ class GuruController extends Controller
        }
 
         $datasiswa = User::all();
-        // dd($datasiswa);
         return view('guru.datasiswa',compact(['datasiswa']));
     }
 
@@ -30,5 +29,10 @@ class GuruController extends Controller
     {
         $history = Siswa::all();
         return view('guru.absensi',compact(['history']));
+    }
+
+    public function getKelas()
+    {
+        $kelas['mipa1'] = User::where('mipa1', '10 MIPA 1')->get();
     }
 }
