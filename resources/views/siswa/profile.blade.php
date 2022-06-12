@@ -54,9 +54,9 @@
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
-                                                    <label for="noid" class="col-sm-2 col-form-label">NIS</label>
+                                                    <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                                     <div class="col-sm-10">
-                                                        <input type="text" class="form-control" id="noid" name="noid" readonly value="{{ Auth::user()->noid }}">
+                                                        <input type="text" class="form-control" id="alamat" name="alamat" readonly value="{{ Auth::user()->alamat }}">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
