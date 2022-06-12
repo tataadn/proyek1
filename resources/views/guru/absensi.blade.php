@@ -36,7 +36,7 @@
                                     Rekap Absen
                                 </a>
                                 <label class="p-r-40 p-t-15">
-                                    <input type="seacrh" class="form-control form-control-sm" placeholder="Search" aria-controls="report-table">
+                                    <input type="search" class="form-control form-control-sm" placeholder="Search" name="search">
                                 </label>
                                 <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="feather icon-more-horizontal"></i>
@@ -109,32 +109,26 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>id absensi</th>
-                                        <th>Tanggal</th>
-                                        <th>Jadwal</th>
+                                        <th>NIS</th>
+                                        <th>Tanggal Absensi</th>
                                         <th>Nama siswa</th>
+                                        <th>Kelas</th>
+                                        <th>Mata Pelajaran</th>
                                         <th>Lokasi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($history as $data)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $data->nis }}</td>
+                                        <td>{{ $data->created_at }}</td>
+                                        <td>{{ $data->name }}</td>
+                                        <td>{{ $data->kelas }}</td>
+                                        <td>{{ $data->mapel }}</td>
+                                        <td>{{ $data->location }}</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -170,32 +164,26 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>id absensi</th>
-                                        <th>Tanggal</th>
-                                        <th>Jadwal</th>
+                                        <th>NIS</th>
+                                        <th>Tanggal Absensi</th>
                                         <th>Nama siswa</th>
+                                        <th>Kelas</th>
+                                        <th>Mata Pelajaran</th>
                                         <th>Lokasi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($history as $data)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $data->nis }}</td>
+                                        <td>{{ $data->created_at }}</td>
+                                        <td>{{ $data->name }}</td>
+                                        <td>{{ $data->kelas }}</td>
+                                        <td>{{ $data->mapel }}</td>
+                                        <td>{{ $data->location }}</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>
@@ -231,32 +219,26 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>id absensi</th>
-                                        <th>Tanggal</th>
-                                        <th>Jadwal</th>
+                                        <th>NIS</th>
+                                        <th>Tanggal Absensi</th>
                                         <th>Nama siswa</th>
+                                        <th>Kelas</th>
+                                        <th>Mata Pelajaran</th>
                                         <th>Lokasi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($history as $data)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $data->nis }}</td>
+                                        <td>{{ $data->created_at }}</td>
+                                        <td>{{ $data->name }}</td>
+                                        <td>{{ $data->kelas }}</td>
+                                        <td>{{ $data->mapel }}</td>
+                                        <td>{{ $data->location }}</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

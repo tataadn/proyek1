@@ -37,7 +37,7 @@
                 <select id="kategori" class="form-select block mt-1 w-full" name="kategori" required aria-label="Default select example">
                     <option value="10 MIPA 1">10 MIPA 1</option>
                     <option value="10 MIPA 2">10 MIPA 2</option>
-                    <option value="10 IPS 2">10 IPS 2</option>
+                    <option value="10 IPS 1">10 IPS 1</option>
                     <option value="10 IPS 2">10 IPS 2</option>
                 </select>
             </div>

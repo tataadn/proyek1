@@ -16,7 +16,11 @@ class GuruController extends Controller
         return view('guru.profile');
     }
 
-    public function datasiswa(){
+    public function datasiswa(Request $request){
+       if($request->has('search')){
+        $data = Siswa::where('nama_siswa', 'LIKE', '%'.$request->search.'%');
+       }
+
         $datasiswa = User::all();
         // dd($datasiswa);
         return view('guru.datasiswa',compact(['datasiswa']));
