@@ -48,13 +48,13 @@
                                 <tbody>
                                     @foreach ($history as $data)
                                     <tr>
-                                        <td rowspan="2">{{ $loop->iteration }}</td>
-                                        <td rowspan="2">{{ $data->nis }}</td>
-                                        <td rowspan="2">{{ $data->created_at }}</td>
-                                        <td rowspan="2">{{ $data->name }}</td>
-                                        <td rowspan="2">{{ $data->kelas }}</td>
-                                        <td rowspan="2">{{ $data->mapel }}</td>
-                                        <td rowspan="2">{{ $data->location }}</td>
+                                        <td>{{ $loop->iteration }}</td>
+                                        <td>{{ $data->nis }}</td>
+                                        <td>{{ $data->created_at }}</td>
+                                        <td>{{ $data->name }}</td>
+                                        <td>{{ $data->kelas }}</td>
+                                        <td>{{ $data->mapel }}</td>
+                                        <td>{{ $data->location }}</td>
                                     </tr>
                                     @endforeach
                                 </tbody>
