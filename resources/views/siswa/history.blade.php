@@ -37,38 +37,26 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th>id absensi</th>
-                                        <th>Tanggal</th>
-                                        <th>Jadwal</th>
+                                        <th>NIS</th>
+                                        <th>Tanggal Absensi</th>
                                         <th>Nama siswa</th>
+                                        <th>Kelas</th>
+                                        <th>Mata Pelajaran</th>
                                         <th>Lokasi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    @foreach ($history as $data)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                        <td>nama</td>
-                                        <td>@Lokasi</td>
+                                        <td rowspan="2">{{ $loop->iteration }}</td>
+                                        <td rowspan="2">{{ $data->nis }}</td>
+                                        <td rowspan="2">{{ $data->created_at }}</td>
+                                        <td rowspan="2">{{ $data->name }}</td>
+                                        <td rowspan="2">{{ $data->kelas }}</td>
+                                        <td rowspan="2">{{ $data->mapel }}</td>
+                                        <td rowspan="2">{{ $data->location }}</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                        <td>@nama</td>
-                                        <td>@Lokasi</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>Larry</td>
-                                        <td>the Bird</td>
-                                        <td>@twitter</td>
-                                        <td>@nama</td>
-                                        <td>@Lokasi</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
                             </table>
                         </div>

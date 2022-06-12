@@ -10,7 +10,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
-use RealRashid\SweetAlert\Facades\Alert;
 
 class RegisteredUserControllers extends Controller
 {
