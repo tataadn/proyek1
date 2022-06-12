@@ -22,7 +22,9 @@ class GuruController extends Controller
         return view('guru.datasiswa',compact(['datasiswa']));
     }
 
-    public function absensi(){
-        return view('guru.absensi');
+    public function absensi()
+    {
+        $history = Siswa::all();
+        return view('guru.absensi',compact(['history']));
     }
 }

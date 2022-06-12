@@ -39,30 +39,35 @@
                                                     <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="name" name="name" readonly value="{{ Auth::user()->name }}">
+                                                        <small id="warn" class="form-text text-muted">Warning! You can't change your name! Please call your teacher if you need help!</small>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="noid" class="col-sm-2 col-form-label">NIS</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="noid" name="noid" readonly value="{{ Auth::user()->noid }}">
+                                                        <small id="warn" class="form-text text-muted">Warning! You can't change your student ID! Please call your teacher if you need help!</small>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="kategori" class="col-sm-2 col-form-label">Kelas</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="kategori" name="kategori" readonly value="{{ Auth::user()->kategori }}">
+                                                        <small id="warn" class="form-text text-muted">Warning! You can't change your class! Please call your teacher if you need help!</small>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="alamat" name="alamat" readonly value="{{ Auth::user()->alamat }}">
+                                                        <small id="warn" class="form-text text-muted">Warning! You can't change your address! Please call your teacher if you need help!</small>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="jenkel" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="jenkel" name="jenkel" readonly value="{{ Auth::user()->jenkel }}">
+                                                        <small id="warn" class="form-text text-muted">Warning! You can't change your gender! Please call your teacher if you need help!</small>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">

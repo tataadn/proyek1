@@ -58,7 +58,8 @@
                                         <th>Jenis Kelamin</th>
                                         <th>Alamat</th>
                                         <th>Email</th>
-                                        <th>Aksi</th>
+                                        <th>Verifikasi</th>
+                                        <th>Action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -71,8 +72,11 @@
                                         <td>{{$data->jenkel }}</td>
                                         <td>{{$data->alamat }}</td>
                                         <td>{{$data->email }}</td>
-                                        <td> <button type="submit" class="btn btn-warning">Edit</button>
-                                            <button type="submit" class="btn btn-danger">Delete</button></td>
+                                        <td>{{$data->email_verified_at }}</td>
+                                        <td> 
+                                            {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
+                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                        </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
