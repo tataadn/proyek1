@@ -65,7 +65,7 @@
                                 <tbody>
                                     @foreach ($datasiswa as $data)
                                     <tr>
-                                        <td>{{$data->id}}</td>
+                                        <td>{{$loop->iteration}}</td>
                                         <td>{{$data->noid }}</td>
                                         <td>{{$data->name }}</td>
                                         <td>{{$data->kategori }}</td>

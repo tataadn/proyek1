@@ -78,13 +78,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <h5 style="line-height: 3ch">
-                                            {{ Auth::user()->name }}<br>
-                                            {{ Auth::user()->email }}<br>
-                                            {{ Auth::user()->kategori }}<br>
-                                            Perempuan <br>
-                                            {{ Auth::user()->alamat }} <br>
-                                        </h5> --}}
                                     </div>
                                     <div class="col-md-4 text-center">
                                         <div class="col mb-5">

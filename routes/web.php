@@ -75,6 +75,8 @@ Route::namespace('Siswa')->prefix('siswa')->name('siswa.')->group(function () {
             Route::get('/absensi', [SiswaController::class,'absensi'])->middleware(['auth'])->name('absensi');
             Route::post('/store', [SiswaController::class,'store'])->middleware(['auth'])->name('store');
             Route::get('/history', [SiswaController::class,'history'])->middleware(['auth'])->name('history');
+            Route::get('/editprofile/{id}', [SiswaController::class,'editprofile'])->middleware(['auth'])->name('editprofile');
+            Route::put('/edit/{id}', [SiswaController::class,'update'])->middleware(['auth'])->name('update');
         });
     });
 });

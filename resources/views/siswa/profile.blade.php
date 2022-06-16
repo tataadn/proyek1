@@ -78,20 +78,13 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        {{-- <h5 style="line-height: 3ch">
-                                            {{ Auth::user()->name }}<br>
-                                            {{ Auth::user()->email }}<br>
-                                            {{ Auth::user()->kategori }}<br>
-                                            Perempuan <br>
-                                            {{ Auth::user()->alamat }} <br>
-                                        </h5> --}}
                                     </div>
                                     <div class="col-md-4 text-center">
                                         <div class="col mb-5">
                                             <img src="{{ asset('assets/images/user/user.jpg') }}" alt="" width="200">
                                         </div>
                                         <div class="col pt-5">
-                                            <a href="#" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>
+                                            <a href="/siswa/editprofile/{{ Auth::user()->id }}" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>
                                         </div>
                                     </div>
                                 </div>

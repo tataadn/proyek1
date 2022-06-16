@@ -32,9 +32,9 @@
                             <div class="col">
                                 <h3 class="text-center p-2"><b>EDIT PROFILE SAYA</b></h3>
                                 <div class="alert alert-warning mt-3" role="alert">
-                                    Perhatian! Anda hanya bisa mengedit EMAIL! Jika ada kendala, segera hubungi Tim IT Anda!
+                                    Perhatian! Anda hanya bisa mengedit EMAIL! Jika ada kendala, segera hubungi guru Anda!
                                 </div>
-                                <form action="/guru/edit/{{ $user->id }}" method="POST">
+                                <form action="/siswa/edit/{{ $user->id }}" method="POST">
                                     @method('put')
                                     @csrf
                                     <div class="row p-2 mt-5">
