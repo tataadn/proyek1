@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Siswa;
 use App\Models\User;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class GuruController extends Controller
 {
@@ -31,8 +32,20 @@ class GuruController extends Controller
         return view('guru.absensi',compact(['history']));
     }
 
-    public function getKelas()
+    public function editprofile($id)
     {
-        $kelas['mipa1'] = User::where('mipa1', '10 MIPA 1')->get();
+        $user = User::find($id);
+        // dd($user);
+        return view('guru.editprofile',compact(['user']));
+        // $siswa = Siswa::where('noid',$noid)->first();
+    }
+
+    public function update(Request $request, $id)
+    {
+        $user = User::find($id);
+        $user->update($request->except(['_token']));
+        // $user->nama_siswa = $request->nama_siswa;
+        Alert::success('Berhasil!', 'Data anda berhasil diupdate!');
+        return view('guru.profile');
     }
 }

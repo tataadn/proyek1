@@ -91,7 +91,7 @@
                                             <img src="{{ asset('assets/images/user/user.jpg') }}" alt="" width="200">
                                         </div>
                                         <div class="col pt-5">
-                                            <a href="#" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>
+                                            <a href="/guru/editprofile/{{ Auth::user()->id }}" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>
                                         </div>
                                     </div>
                                 </div>
