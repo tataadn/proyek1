@@ -75,7 +75,7 @@
                                 <div class="col-sm-12 pt-3">
                                     <div class="form-group">
                                         <div class="input-group mb-3">
-                                            <textarea class="form-control" id="location" name="location" rows="2"></textarea>
+                                            <textarea readonly class="form-control" id="location" name="location" rows="2"></textarea>
                                             {{-- <h4 class="form-control" aria-describedby="basic-addon2" id="location" name="location"></h4> --}}
                                             <div class="input-group-append">
                                                 <button class="btn btn-primary" type="button" onclick="getLocation()">Lokasi Anda</button>
