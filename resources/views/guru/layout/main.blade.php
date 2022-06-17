@@ -33,7 +33,7 @@
 					<div class="main-menu-header">
 						<img class="img-radius" src="{{ asset('assets/images/user/user.jpg') }}" alt="User-Profile-Image">
 						<div class="user-details">
-							{{-- <div id="more-details">{{ Auth::user()->name }}</div> --}}
+							<div id="more-details">{{ Auth::user()->name }}</div>
 						</div>
 					</div>
 				</div>
@@ -94,7 +94,7 @@
 								<div class="dropdown-menu dropdown-menu-right profile-notification">
 									<div class="pro-head">
 										<img src="{{ asset('assets/images/user/user.jpg') }}" class="img-radius" alt="User-Profile-Image">
-										{{-- <span>{{ Auth::user()->name }}</span> --}}
+										<span>{{ Auth::user()->name }}</span>
 									</div>
 									<ul class="pro-body">
 										<li>

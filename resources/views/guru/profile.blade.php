@@ -35,7 +35,7 @@
                                     <div class="col-md-8">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                {{-- <div class="form-group row">
+                                                <div class="form-group row">
                                                     <label for="nama" class="col-sm-2 col-form-label">Nama</label>
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="name" name="name" readonly value="{{ Auth::user()->name }}">
@@ -75,7 +75,7 @@
                                                     <div class="col-sm-10">
                                                         <input type="text" class="form-control" id="email" name="email" readonly value="{{ Auth::user()->email }}">
                                                     </div>
-                                                </div> --}}
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -84,7 +84,7 @@
                                             <img src="{{ asset('assets/images/user/user.jpg') }}" alt="" width="200">
                                         </div>
                                         <div class="col pt-5">
-                                            {{-- <a href="/guru/editprofile/{{ Auth::user()->id }}" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a> --}}
+                                            <a href="/guru/editprofile/{{ Auth::user()->id }}" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>
                                         </div>
                                     </div>
                                 </div>
