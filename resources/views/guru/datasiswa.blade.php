@@ -75,7 +75,12 @@
                                         <td>{{$data->email_verified_at }}</td>
                                         <td> 
                                             {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <form action="{{ url('/guru/datasiswa/'.$data->id) }}" method="POST" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                                @csrf
+                                                @method('DELETE')
+                                                <x-button class="btn btn-danger">Delete</x-button>
+                                                {{-- <button type="submit" class="btn btn-danger">Delete</button> --}}
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach

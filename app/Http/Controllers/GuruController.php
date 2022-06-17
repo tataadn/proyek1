@@ -48,4 +48,11 @@ class GuruController extends Controller
         Alert::success('Berhasil!', 'Data anda berhasil diupdate!');
         return view('guru.profile');
     }
+
+    public function delete($id)
+    {
+        $user = User::find($id);
+        $user->delete();
+        return view('guru.datasiswa',compact(['user']))->with('success','Data berhasil dihapus!');
+    }
 }
