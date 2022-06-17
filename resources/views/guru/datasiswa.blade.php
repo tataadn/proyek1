@@ -74,12 +74,9 @@
                                         <td>{{$data->email }}</td>
                                         <td>{{$data->email_verified_at }}</td>
                                         <td> 
-                                            {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
-                                            <form action="{{ url('/guru/datasiswa/'.$data->id) }}" method="POST" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                            <form action="/guru/datasiswa/{{ $data->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
                                                 @csrf
-                                                @method('DELETE')
                                                 <x-button class="btn btn-danger">Delete</x-button>
-                                                {{-- <button type="submit" class="btn btn-danger">Delete</button> --}}
                                             </form>
                                         </td>
                                     </tr>
@@ -130,7 +127,7 @@
                                 <tbody>
                                     @foreach ($datasiswa as $data)
                                     <tr>
-                                        <td>{{$data->id}}</td>
+                                        <td>{{$loop->iteration}}</td>
                                         <td>{{$data->noid }}</td>
                                         <td>{{$data->name }}</td>
                                         <td>{{$data->kategori }}</td>
@@ -139,8 +136,10 @@
                                         <td>{{$data->email }}</td>
                                         <td>{{$data->email_verified_at }}</td>
                                         <td> 
-                                            {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <form action="/guru/datasiswa/{{ $data->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                                @csrf
+                                                <x-button class="btn btn-danger">Delete</x-button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -190,7 +189,7 @@
                                 <tbody>
                                     @foreach ($datasiswa as $data)
                                     <tr>
-                                        <td>{{$data->id}}</td>
+                                        <td>{{$loop->iteration}}</td>
                                         <td>{{$data->noid }}</td>
                                         <td>{{$data->name }}</td>
                                         <td>{{$data->kategori }}</td>
@@ -199,8 +198,10 @@
                                         <td>{{$data->email }}</td>
                                         <td>{{$data->email_verified_at }}</td>
                                         <td> 
-                                            {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <form action="/guru/datasiswa/{{ $data->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                                @csrf
+                                                <x-button class="btn btn-danger">Delete</x-button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach
@@ -250,7 +251,7 @@
                                 <tbody>
                                     @foreach ($datasiswa as $data)
                                     <tr>
-                                        <td>{{$data->id}}</td>
+                                        <td>{{$loop->iteration}}</td>
                                         <td>{{$data->noid }}</td>
                                         <td>{{$data->name }}</td>
                                         <td>{{$data->kategori }}</td>
@@ -259,8 +260,10 @@
                                         <td>{{$data->email }}</td>
                                         <td>{{$data->email_verified_at }}</td>
                                         <td> 
-                                            {{-- <button type="submit" class="btn btn-warning">Edit</button> --}}
-                                            <button type="submit" class="btn btn-danger">Delete</button>
+                                            <form action="/guru/datasiswa/{{ $data->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                                @csrf
+                                                <x-button class="btn btn-danger">Delete</x-button>
+                                            </form>
                                         </td>
                                     </tr>
                                     @endforeach

@@ -51,8 +51,15 @@ class GuruController extends Controller
 
     public function delete($id)
     {
-        $user = User::find($id);
-        $user->delete();
-        return view('guru.datasiswa',compact(['user']))->with('success','Data berhasil dihapus!');
+        $datasiswa = User::find($id);
+        $datasiswa->delete();
+        toast('Data berhasil dihapus!','success');
+        return redirect()->route('guru.datasiswa');
     }
+
+    // public function destroy(User $user)
+    // {
+    //     User::destroy($user->id);
+    //     return redirect('/guru/datasiswa')->with('success','Data berhasil dihapus!');
+    // }
 }
