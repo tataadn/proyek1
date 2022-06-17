@@ -32,7 +32,7 @@
                         <h3><b>Kelas MIPA 1</b></h3>
                         <div class="card-header-right">
                             <div class="btn-group card-option">
-                                <a href="#" class="btn btn-primary m-r-20 mb-2 mt-2">
+                                <a href="/guru/exportabsensi" class="btn btn-primary m-r-20 mb-2 mt-2">
                                     Rekap Absen
                                 </a>
                                 <label class="p-r-40 p-t-15">

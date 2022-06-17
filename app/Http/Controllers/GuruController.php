@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Siswa;
 use App\Models\User;
+use App\Models\Siswa;
+use App\Exports\SiswaExport;
 use Illuminate\Http\Request;
+use Auth;
+use Maatwebsite\Excel\Facades\Excel;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class GuruController extends Controller
@@ -55,6 +58,11 @@ class GuruController extends Controller
         $datasiswa->delete();
         toast('Data berhasil dihapus!','success');
         return redirect()->route('guru.datasiswa');
+    }
+
+    public function exportabsensi()
+    {
+        return Excel::download(new SiswaExport, 'data-absensi-siswa.xlsx');
     }
 
     // public function destroy(User $user)
