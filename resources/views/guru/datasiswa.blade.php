@@ -24,13 +24,100 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <div class="row">
+        <div class="row p-5">
             <!-- data siswa -->
-            <div class="col-xl-12 col-md-12" id="ipa-1">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-yellow">10 IPA 1</h4>
+                                <h6 class="text-muted m-b-0">Data Siswa</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-yellow">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/data-mipa1" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-green">10 IPA 2</h4>
+                                <h6 class="text-muted m-b-0">Data Siswa</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-green">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/data-mipa2" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-red">10 IPS 1</h4>
+                                <h6 class="text-muted m-b-0">Data Siswa</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-red">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/data-ips1" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-blue">10 IPS 2</h4>
+                                <h6 class="text-muted m-b-0">Data Siswa</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-blue">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/data-ips2" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {{-- <div class="col-xl-12 col-md-12" id="ipa-1">
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 1</b></h3>
-                        {{-- <a href="#" class="btn btn-success pull-right">+Tambah Data</a> --}}
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -92,7 +179,6 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 2</b></h3>
-                        {{-- <a href="#" class="btn btn-success pull-right">+Tambah Data</a> --}}
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -154,7 +240,6 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 1</b></h3>
-                        {{-- <a href="#" class="btn btn-success pull-right">+Tambah Data</a> --}}
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -216,7 +301,6 @@
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas IPS 2</b></h3>
-                        {{-- <a href="#" class="btn btn-success pull-right">+Tambah Data</a> --}}
                         <div class="card-header-right">
                             <div class="btn-group card-option">
                                 <label class="p-r-40 p-t-10">
@@ -272,7 +356,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             {{-- <div class="col-xl-12 col-md-12" id="ipa-3">
                 <div class="card table-card">

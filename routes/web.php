@@ -48,14 +48,34 @@ Route::namespace('Guru', )->prefix('guru')->name('guru.')->group(function () {
 
         //Halaman Guru
         Route::middleware(['auth', 'verified'])->group(function () {
+            //route dashboard Guru
             Route::get('/dashboard', [GuruController::class,'dashboard'])->middleware(['auth'])->name('dashboard');
+
+            //route profile Guru
             Route::get('profile', [GuruController::class, 'profile'])->middleware(['auth'])->name('profil');
-            Route::get('/datasiswa', [GuruController::class,'datasiswa'])->middleware(['auth'])->name('datasiswa');
-            Route::get('/datasiswa/{id}', [GuruController::class,'delete'])->middleware(['auth'])->name('delete');
-            Route::get('/absensisiswa', [GuruController::class,'absensi'])->middleware(['auth'])->name('absensisiswa');
-            Route::get('/exportabsensi', [GuruController::class,'exportabsensi'])->middleware(['auth'])->name('exportabsensi');
             Route::get('/editprofile/{id}', [GuruController::class,'editprofile'])->middleware(['auth'])->name('editprofile');
             Route::put('/edit/{id}', [GuruController::class,'update'])->middleware(['auth'])->name('update');
+            
+            //route data siswa
+            Route::get('/datasiswa', [GuruController::class,'datasiswa'])->middleware(['auth'])->name('datasiswa');
+            Route::get('/datasiswa/{id}', [GuruController::class,'delete'])->middleware(['auth'])->name('delete');
+            Route::get('/data-mipa1', [GuruController::class,'datamipa1'])->middleware(['auth'])->name('datamipa1');
+            Route::get('/data-mipa2', [GuruController::class,'datamipa2'])->middleware(['auth'])->name('datamipa2');
+            Route::get('/data-ips1', [GuruController::class,'dataips1'])->middleware(['auth'])->name('dataips1');
+            Route::get('/data-ips2', [GuruController::class,'dataips2'])->middleware(['auth'])->name('dataips2');
+
+            //route absensi
+            Route::get('/absensisiswa', [GuruController::class,'absensi'])->middleware(['auth'])->name('absensisiswa');
+            Route::get('/absensi-mipa1', [GuruController::class,'absensimipa1'])->middleware(['auth'])->name('absensimipa1');
+            Route::get('/absensi-mipa2', [GuruController::class,'absensimipa2'])->middleware(['auth'])->name('absensimipa2');
+            Route::get('/absensi-ips1', [GuruController::class,'absensiips1'])->middleware(['auth'])->name('absensiips1');
+            Route::get('/absensi-ips2', [GuruController::class,'absensiips2'])->middleware(['auth'])->name('absensiips2');
+            
+            //route export
+            Route::get('/exportmipa1', [GuruController::class,'exportmipa1'])->middleware(['auth'])->name('exportmipa1');
+            Route::get('/exportmipa2', [GuruController::class,'exportmipa2'])->middleware(['auth'])->name('exportmipa2');
+            Route::get('/exportips1', [GuruController::class,'exportips1'])->middleware(['auth'])->name('exportips1');
+            Route::get('/exportips2', [GuruController::class,'exportips2'])->middleware(['auth'])->name('exportips2');
         });
     });
 });

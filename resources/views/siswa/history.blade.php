@@ -31,36 +31,42 @@
                     <div class="card-header text-center">
                         <h3><b>RIWAYAT ABSENSI</b></h3>
                     </div>
-                    <div class="card-body table-border-style">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>No</th>
-                                        <th>NIS</th>
-                                        <th>Tanggal Absensi</th>
-                                        <th>Nama siswa</th>
-                                        <th>Kelas</th>
-                                        <th>Mata Pelajaran</th>
-                                        <th>Lokasi</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach ($history as $data)
-                                    <tr>
-                                        <td>{{ $loop->iteration }}</td>
-                                        <td>{{ $data->nis }}</td>
-                                        <td>{{ $data->created_at }}</td>
-                                        <td>{{ $data->name }}</td>
-                                        <td>{{ $data->kelas }}</td>
-                                        <td>{{ $data->mapel }}</td>
-                                        <td>{{ $data->location }}</td>
-                                    </tr>
-                                    @endforeach
-                                </tbody>
-                            </table>
+                    @if($history->count())
+                        @foreach ($history as $data)
+                        <div class="card-body table-border-style">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>NIS</th>
+                                            <th>Tanggal Absensi</th>
+                                            <th>Nama siswa</th>
+                                            <th>Kelas</th>
+                                            <th>Mata Pelajaran</th>
+                                            <th>Lokasi</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>{{ $loop->iteration }}</td>
+                                            <td>{{ $data->nis }}</td>
+                                            <td>{{ $data->created_at }}</td>
+                                            <td>{{ $data->name }}</td>
+                                            <td>{{ $data->kelas }}</td>
+                                            <td>{{ $data->mapel }}</td>
+                                            <td>{{ $data->location }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
+                        @endforeach
+                    @else
+                    <div class="card-body">
+                        <h6 class="text-center text-danger">Anda belum melakukan absensi!</h6>
                     </div>
+                    @endif
                 </div>
             </div>
             <!-- Tabel end -->

@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\Ips1Export;
+use App\Exports\Ips2Export;
+use App\Exports\Mipa1Export;
+use App\Exports\Mipa2Export;
 use App\Models\User;
 use App\Models\Siswa;
 use App\Exports\SiswaExport;
@@ -38,7 +42,7 @@ class GuruController extends Controller
     public function editprofile($id)
     {
         $user = User::find($id);
-        // dd($user);
+
         return view('guru.editprofile',compact(['user']));
         // $siswa = Siswa::where('noid',$noid)->first();
     }
@@ -60,14 +64,75 @@ class GuruController extends Controller
         return redirect()->route('guru.datasiswa');
     }
 
-    public function exportabsensi()
+    public function exportmipa1()
     {
-        return Excel::download(new SiswaExport, 'data-absensi-siswa.xlsx');
+        return Excel::download(new Mipa1Export, 'data-absensi-mipa1.xlsx');
     }
 
-    // public function destroy(User $user)
-    // {
-    //     User::destroy($user->id);
-    //     return redirect('/guru/datasiswa')->with('success','Data berhasil dihapus!');
-    // }
-}
+    public function exportmipa2()
+    {
+        return Excel::download(new Mipa2Export, 'data-absensi-mipa2.xlsx');
+    }
+
+    public function exportips1()
+    {
+        return Excel::download(new Ips1Export, 'data-absensi-ips1.xlsx');
+    }
+
+    public function exportips2()
+    {
+        return Excel::download(new Ips2Export, 'data-absensi-ips2.xlsx');
+    }
+
+    public function absensimipa1() 
+    {
+        $data = Siswa::all()->where('kelas','10 MIPA 1');
+        return view('guru.absensi.mipa1',compact(['data']));
+    }
+
+    public function absensimipa2() 
+    {
+        $data = Siswa::all()->where('kelas','10 MIPA 2');
+        return view('guru.absensi.mipa2',compact(['data']));
+    }
+
+    public function absensiips1() 
+    {
+        $data = Siswa::all()->where('kelas','10 IPS 1');
+        return view('guru.absensi.ips1',compact(['data']));
+    }
+
+    public function absensiips2() 
+    {
+        $data = Siswa::all()->where('kelas','10 IPS 2');
+        return view('guru.absensi.ips2',compact(['data']));
+    }
+
+    public function datamipa1() 
+    {
+        $data = User::all()
+        ->where('kategori','10 MIPA 1');
+        return view('guru.datasiswa.mipa1',compact(['data']));
+    }
+
+    public function datamipa2() 
+    {
+        $data = User::all()
+            ->where('kategori','10 MIPA 2');
+        return view('guru.datasiswa.mipa2',compact(['data']));
+    }
+
+    public function dataips1() 
+    {
+        $data = User::all()
+            ->where('kategori','10 IPS 1');
+        return view('guru.datasiswa.ips1',compact(['data']));
+    }
+
+    public function dataips2() 
+    {
+        $data = User::all()
+            ->where('kategori','10 IPS 2');
+        return view('guru.datasiswa.ips2',compact(['data']));
+    }
+} 

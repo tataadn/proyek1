@@ -51,13 +51,16 @@
             <div class="col-lg-5 col-md-12">
                 <!-- page statustic card start -->
                 <div class="row">
+                    <div class="col-sm-12">
+                        <h3 class="text-white text-center">Quick Access</h3>
+                    </div>
                     <div class="col-sm-6">
                         <div class="card">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-yellow">IPA 1</h4>
-                                        <h6 class="text-muted m-b-0">28 Siswa</h6>
+                                        <h4 class="text-c-yellow">10 IPA 1</h4>
+                                        <h6 class="text-muted m-b-0">Data Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="feather icon-bar-chart-2 f-28"></i>
@@ -67,7 +70,7 @@
                             <div class="card-footer bg-c-yellow">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <a href="#" class="text-white m-b-0">Klik di Sini</a>
+                                        <a href="/guru/data-mipa1" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -78,8 +81,8 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-green">IPA 2</h4>
-                                        <h6 class="text-muted m-b-0">29 Siswa</h6>
+                                        <h4 class="text-c-green">10 IPA 2</h4>
+                                        <h6 class="text-muted m-b-0">Data Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="feather icon-bar-chart-2 f-28"></i>
@@ -89,7 +92,7 @@
                             <div class="card-footer bg-c-green">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <a href="#" class="text-white m-b-0">Klik di Sini</a>
+                                        <a href="/guru/data-mipa2" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -100,8 +103,8 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-red">IPS 1</h4>
-                                        <h6 class="text-muted m-b-0">27 Siswa</h6>
+                                        <h4 class="text-c-red">10 IPS 1</h4>
+                                        <h6 class="text-muted m-b-0">Data Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="feather icon-bar-chart-2 f-28"></i>
@@ -111,7 +114,7 @@
                             <div class="card-footer bg-c-red">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <a href="#" class="text-white m-b-0">Klik di Sini</a>
+                                        <a href="/guru/data-ips1" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>
@@ -122,8 +125,8 @@
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-8">
-                                        <h4 class="text-c-blue">IPS 2</h4>
-                                        <h6 class="text-muted m-b-0">28 Siswa</h6>
+                                        <h4 class="text-c-blue">10 IPS 2</h4>
+                                        <h6 class="text-muted m-b-0">Data Siswa</h6>
                                     </div>
                                     <div class="col-4 text-right">
                                         <i class="feather icon-bar-chart-2 f-28"></i>
@@ -133,7 +136,7 @@
                             <div class="card-footer bg-c-blue">
                                 <div class="row align-items-center">
                                     <div class="col-9">
-                                        <a href="#" class="text-white m-b-0">Klik di Sini</a>
+                                        <a href="/guru/data-ips2" class="text-white m-b-0">Klik di Sini</a>
                                     </div>
                                 </div>
                             </div>

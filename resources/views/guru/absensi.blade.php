@@ -24,9 +24,98 @@
         </div>
         <!-- [ breadcrumb ] end -->
         <!-- [ Main Content ] start -->
-        <div class="row">
+        <div class="row p-5">
             <!-- data siswa -->
-            <div class="col-xl-12 col-md-12">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-yellow">10 IPA 1</h4>
+                                <h6 class="text-muted m-b-0">Data Absensi</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-yellow">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/absensi-mipa1" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-green">10 IPA 2</h4>
+                                <h6 class="text-muted m-b-0">Data Absensi</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-green">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/absensi-mipa2" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-red">10 IPS 1</h4>
+                                <h6 class="text-muted m-b-0">Data Absensi</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-red">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/absensi-ips1" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row align-items-center">
+                            <div class="col-8">
+                                <h4 class="text-c-blue">10 IPS 2</h4>
+                                <h6 class="text-muted m-b-0">Data Absensi</h6>
+                            </div>
+                            <div class="col-4 text-right">
+                                <i class="feather icon-bar-chart-2 f-28"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-c-blue">
+                        <div class="row align-items-center">
+                            <div class="col-9">
+                                <a href="/guru/absensi-ips2" class="text-white m-b-0">Klik di Sini</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {{-- <div class="col-xl-12 col-md-12">
                 <div class="card table-card">
                     <div class="card-header">
                         <h3><b>Kelas MIPA 1</b></h3>
@@ -244,7 +333,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- data siswa end -->
         </div>

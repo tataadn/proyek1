@@ -35,20 +35,20 @@
             <div class="mb-4">
                 <x-label for="kategori" :value="__('Kelas')" />
                 <select id="kategori" class="form-select block mt-1 w-full" name="kategori" required aria-label="Default select example">
-                        <option value="bindo">Bahasa Indonesia</option>
-						<option value="bing">Bahasa Inggris</option>
-						<option value="bio">Biologi</option>
-						<option value="eko">Ekonomi</option>
-						<option value="fis">Fisika</option>
-						<option value="geo">Geografi</option>
-						<option value="kim">Kimia</option>
-						<option value="mat_p">Matematika Peminatan</option>
-						<option value="mat_w">Matematika Wajib</option>
-						<option value="pai">Pendidikan Agama Islam</option>
-						<option value="pkn">Pendidikan Kewarganegaraan</option>
-						<option value="sej">Sejarah</option>
-						<option value="sos">Sosiologi</option>
-						<option value="tim it">Tim IT</option>
+                        <option value="Bhs Indonesia">Bahasa Indonesia</option>
+						<option value="Bhs Inggris">Bahasa Inggris</option>
+						<option value="Biologi">Biologi</option>
+						<option value="Ekonomi">Ekonomi</option>
+						<option value="Fisika">Fisika</option>
+						<option value="Geografi">Geografi</option>
+						<option value="Kimia">Kimia</option>
+						<option value="Matematika Peminatan">Matematika Peminatan</option>
+						<option value="Matematika Wajib">Matematika Wajib</option>
+						<option value="Pendidikan Agama Islam">Pendidikan Agama Islam</option>
+						<option value="Pendidikan Kewarganegaraan</">Pendidikan Kewarganegaraan</option>
+						<option value="Sejarah">Sejarah</option>
+						<option value="Sosiologi">Sosiologi</option>
+						<option value="Tim IT">Tim IT</option>
                 </select>
             </div>
 

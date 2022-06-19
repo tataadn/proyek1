@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Siswa;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 
 class SiswaController extends Controller
@@ -26,13 +27,12 @@ class SiswaController extends Controller
 
     public function history()
     {
-        $history = Siswa::all();
+        $history = Siswa::all()->where('name',Auth::user()->name);
         return view('siswa.history',compact('history'));
     }
 
     public function store(Request $request)
     {
-        // dd($request->except(['_token']));
         Siswa::create($request->except(['_token']));
         Alert::success('Berhasil!', 'Anda telah melakukan absensi!');
         return redirect('siswa/absensi');
