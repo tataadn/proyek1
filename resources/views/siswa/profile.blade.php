@@ -82,6 +82,7 @@
                                     <div class="col-md-4 text-center">
                                         <div class="col mb-5">
                                             <img src="{{ asset('assets/images/user/user.jpg') }}" alt="" width="200">
+                                            <small id="warn" class="form-text text-muted">Warning! Feature change profile picture <br> will be release soon!</small>
                                         </div>
                                         <div class="col pt-5">
                                             <a href="/siswa/editprofile/{{ Auth::user()->id }}" type="button" class="btn btn-primary"><i class="feather icon-user"></i> EDIT</a>

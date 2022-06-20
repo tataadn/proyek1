@@ -55,6 +55,9 @@
 					        <li><a href="{{ route('guru.absensisiswa') }}">Data Absensi Siswa</a></li>
 					    </ul>
 					</li>
+					<li class="nav-item">
+					    <a href="{{ url('/guru/data-guru') }}" class="nav-link "><span class="pcoded-micon"><i class="feather icon-file-text"></i></span><span class="pcoded-mtext">Kelola Guru</span></a>
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -74,7 +77,7 @@
 					</a>
 				</div>
 				<div class="collapse navbar-collapse">
-					<ul class="navbar-nav mr-auto">
+					{{-- <ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a href="#!" class="pop-search"><i class="feather icon-search"></i></a>
 							<div class="search-bar">
@@ -84,7 +87,7 @@
 								</button>
 							</div>
 						</li>
-					</ul>
+					</ul> --}}
 					<ul class="navbar-nav ml-auto">
 						<li>
 							<div class="dropdown drp-user">

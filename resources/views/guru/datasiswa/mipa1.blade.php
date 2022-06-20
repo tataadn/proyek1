@@ -35,9 +35,9 @@
                                 <h3><b>Kelas 10 MIPA 1</b></h3>
                                 <div class="card-header-right">
                                     <div class="btn-group card-option">
-                                        <label class="p-r-40 p-t-15">
+                                        {{-- <label class="p-r-40 p-t-15">
                                             <input type="search" class="form-control form-control-sm" placeholder="Search" name="search">
-                                        </label>
+                                        </label> --}}
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="feather icon-more-horizontal"></i>
                                         </button>
@@ -99,9 +99,9 @@
                                         <a href="/guru/exportabsensi" class="btn btn-primary m-r-20 mb-2 mt-2">
                                             Rekap Absen
                                         </a>
-                                        <label class="p-r-40 p-t-15">
+                                        {{-- <label class="p-r-40 p-t-15">
                                             <input type="search" class="form-control form-control-sm" placeholder="Search" name="search">
-                                        </label>
+                                        </label> --}}
                                         <button type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                             <i class="feather icon-more-horizontal"></i>
                                         </button>

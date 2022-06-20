@@ -55,6 +55,10 @@ Route::namespace('Guru', )->prefix('guru')->name('guru.')->group(function () {
             Route::get('profile', [GuruController::class, 'profile'])->middleware(['auth'])->name('profil');
             Route::get('/editprofile/{id}', [GuruController::class,'editprofile'])->middleware(['auth'])->name('editprofile');
             Route::put('/edit/{id}', [GuruController::class,'update'])->middleware(['auth'])->name('update');
+
+            //route data guru
+            Route::get('/data-guru', [GuruController::class, 'dataGuru'])->middleware(['auth'])->name('dataGuru');
+            Route::get('/data-guru/{id}', [GuruController::class, 'deleteGuru'])->middleware(['auth'])->name('deleteGuru');
             
             //route data siswa
             Route::get('/datasiswa', [GuruController::class,'datasiswa'])->middleware(['auth'])->name('datasiswa');

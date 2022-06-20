@@ -53,12 +53,12 @@
                             </div>
                             <div class="col-md-7">
                                 <br>
-                                <h6 style="line-height: 3ch">{{ Auth::user()->name }} <br>
+                                <h6 style="line-height: 3ch">
+                                    {{ Auth::user()->noid }} <br>
+                                    {{ Auth::user()->name }} <br>
+                                    {{ Auth::user()->kategori }}  <br>
+                                    {{ Auth::user()->alamat }}  <br>
                                     {{ Auth::user()->email }}  <br>
-                                    MIPA-I <br>
-                                    Perempuan <br>
-                                    Perumahan Oce Blok B2 Surabaya Barat <br>
-                                    Narara123 <br>
                                 </h6>
                             </div>
                         </div>

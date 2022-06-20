@@ -11,13 +11,11 @@
                 <div class="row align-items-center">
                     <div class="col-md-12">
                         <div class="page-header-title">
-                            <h5 class="m-b-10">Halaman Data Siswa</h5>
+                            <h5 class="m-b-10">Halaman Data Guru</h5>
                         </div>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('guru.dashboard') }}"><i class="feather icon-home"></i></a></li>
-                            <li class="breadcrumb-item"><a href="#!">Kelola Siswa</a></li>
-                            <li class="breadcrumb-item"><a href="{{ route('guru.datasiswa') }}">Data Siswa</a></li>
-                            <li class="breadcrumb-item"><a href="{{ url('guru.datasiswa.ips1') }}">Data Siswa 10 IPS 1</a></li>
+                            <li class="breadcrumb-item"><a href="{{ route('guru.datasiswa') }}">Data Guru</a></li>
                         </ul>
                     </div>
                 </div>
@@ -33,7 +31,7 @@
                         <div class="col-xl-12 col-md-12">
                             <div class="card table-card">
                                 <div class="card-header">
-                                    <h3><b>Kelas 10 IPS 1</b></h3>
+                                    <h3><b>Data Guru</b></h3>
                                     <div class="card-header-right">
                                         <div class="btn-group card-option">
                                             {{-- <label class="p-r-40 p-t-15">
@@ -55,9 +53,9 @@
                                             <thead>
                                                 <tr>
                                                     <th>No</th>
-                                                    <th>Nis</th>
+                                                    <th>NIP</th>
                                                     <th>Nama</th>
-                                                    <th>Kelas</th>
+                                                    <th>Mata Pelajaran</th>
                                                     <th>Jenis Kelamin</th>
                                                     <th>Alamat</th>
                                                     <th>Email</th>
@@ -77,7 +75,7 @@
                                                     <td>{{ $d->email }}</td>
                                                     <td>{{ $d->email_verified_at }}</td>
                                                     <td>
-                                                        <form action="/guru/datasiswa/{{ $d->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
+                                                        <form action="/guru/data-guru/{{ $d->id }}" method="GET" onsubmit="return confirm('Yakin menghapus data ini?')">
                                                         @csrf
                                                         <x-button class="btn btn-danger">Delete</x-button>
                                                         </form>
@@ -97,9 +95,9 @@
                                     <h3><b>Kelas IPS 1</b></h3>
                                     <div class="card-header-right">
                                         <div class="btn-group card-option">
-                                            <a href="/guru/exportabsensi" class="btn btn-primary m-r-20 mb-2 mt-2">
+                                            {{-- <a href="/guru/exportabsensi" class="btn btn-primary m-r-20 mb-2 mt-2">
                                                 Rekap Absen
-                                            </a>
+                                            </a> --}}
                                             {{-- <label class="p-r-40 p-t-15">
                                                 <input type="search" class="form-control form-control-sm" placeholder="Search" name="search">
                                             </label> --}}

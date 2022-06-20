@@ -24,11 +24,7 @@ class GuruController extends Controller
         return view('guru.profile');
     }
 
-    public function datasiswa(Request $request){
-       if($request->has('search')){
-        $data = Siswa::where('nama_siswa', 'LIKE', '%'.$request->search.'%');
-       }
-
+    public function datasiswa(){
         $datasiswa = User::all();
         return view('guru.datasiswa',compact(['datasiswa']));
     }
@@ -37,6 +33,12 @@ class GuruController extends Controller
     {
         $history = Siswa::all();
         return view('guru.absensi',compact(['history']));
+    }
+
+    public function dataGuru()
+    {
+        $data = User::all()->where('role', 'guru');
+        return view('guru.dataGuru',compact(['data']));
     }
 
     public function editprofile($id)
@@ -64,6 +66,14 @@ class GuruController extends Controller
         return redirect()->route('guru.datasiswa');
     }
 
+    public function deleteGuru($id)
+    {
+        $dataguru = User::find($id);
+        $dataguru->delete();
+        // toast('Data berhasil dihapus!','success');
+        return redirect()->route('guru.data-guru');
+    }
+
     public function exportmipa1()
     {
         return Excel::download(new Mipa1Export, 'data-absensi-mipa1.xlsx');
@@ -84,6 +94,7 @@ class GuruController extends Controller
         return Excel::download(new Ips2Export, 'data-absensi-ips2.xlsx');
     }
 
+    //controller data absensi
     public function absensimipa1() 
     {
         $data = Siswa::all()->where('kelas','10 MIPA 1');
@@ -108,31 +119,28 @@ class GuruController extends Controller
         return view('guru.absensi.ips2',compact(['data']));
     }
 
+    //controller data siswa
     public function datamipa1() 
     {
-        $data = User::all()
-        ->where('kategori','10 MIPA 1');
+        $data = User::all()->where('kategori','10 MIPA 1');
         return view('guru.datasiswa.mipa1',compact(['data']));
     }
 
     public function datamipa2() 
     {
-        $data = User::all()
-            ->where('kategori','10 MIPA 2');
+        $data = User::all()->where('kategori','10 MIPA 2');
         return view('guru.datasiswa.mipa2',compact(['data']));
     }
 
     public function dataips1() 
     {
-        $data = User::all()
-            ->where('kategori','10 IPS 1');
+        $data = User::all()->where('kategori','10 IPS 1');
         return view('guru.datasiswa.ips1',compact(['data']));
     }
 
     public function dataips2() 
     {
-        $data = User::all()
-            ->where('kategori','10 IPS 2');
+        $data = User::all()->where('kategori','10 IPS 2');
         return view('guru.datasiswa.ips2',compact(['data']));
     }
 } 
