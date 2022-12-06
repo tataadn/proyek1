@@ -21,6 +21,7 @@ class Siswa extends Authenticatable
         'nis',
         'name',
         'kelas',
+        'alamat',
         'mapel',
         'location',
     ];

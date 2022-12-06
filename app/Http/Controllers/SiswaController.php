@@ -36,6 +36,7 @@ class SiswaController extends Controller
         Siswa::create($request->except(['_token']));
         Alert::success('Berhasil!', 'Anda telah melakukan absensi!');
         return redirect('siswa/absensi');
+        // return $request->file('image')->store('post-images');
     }
 
     public function editprofile($id)

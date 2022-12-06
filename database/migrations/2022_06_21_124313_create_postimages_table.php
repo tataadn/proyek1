@@ -13,14 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('siswas', function (Blueprint $table) {
+        Schema::create('postimages', function (Blueprint $table) {
             $table->id();
-            $table->string('nis');
-            $table->string('name');
-            $table->string('kelas');
-            $table->string('alamat');
-            $table->string('mapel');
-            $table->string('location');
             $table->timestamps();
         });
     }
@@ -32,6 +26,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('siswas');
+        Schema::dropIfExists('postimages');
     }
 };

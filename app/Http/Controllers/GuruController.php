@@ -49,6 +49,19 @@ class GuruController extends Controller
         // $siswa = Siswa::where('noid',$noid)->first();
     }
 
+    // Add image
+    // public function addImage(){
+    //     return view('add_image');
+    // }
+    // //Store image
+    // public function storeImage(){
+    //    /*Logic to store data*/
+    // }
+	// 	View image
+    // public function viewImage(){
+    //     return view('view_image');
+    // }
+
     public function update(Request $request, $id)
     {
         $user = User::find($id);
@@ -56,6 +69,7 @@ class GuruController extends Controller
         // $user->nama_siswa = $request->nama_siswa;
         Alert::success('Berhasil!', 'Data anda berhasil diupdate!');
         return view('guru.profile');
+        
     }
 
     public function delete($id)

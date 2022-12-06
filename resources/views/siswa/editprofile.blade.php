@@ -34,7 +34,7 @@
                                 <div class="alert alert-warning mt-3" role="alert">
                                     Perhatian! Anda hanya bisa mengedit EMAIL! Jika ada kendala, segera hubungi guru Anda!
                                 </div>
-                                <form action="/siswa/edit/{{ $user->id }}" method="POST">
+                                <form action="/siswa/edit/{{ $user->id }}" method="POST" enctype="multipart/form-data">
                                     @method('put')
                                     @csrf
                                     <div class="row p-2 mt-5">
@@ -95,6 +95,12 @@
                                         <div class="col-md-4 text-center">
                                             <div class="col mb-5">
                                                 <img src="{{ asset('assets/images/user/user.jpg') }}" alt="" width="200">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                                </div>
                                             </div>
                                             <div class="col pt-5">
                                                 <button type="submit" class="btn btn-primary">SAVE CHANGES</button>

@@ -53,6 +53,12 @@
                                 </div>
                                 <div class="col-sm-12 pt-3">
                                     <div class="form-group">
+                                        <label class="floating-label" for="alamat">Alamat Asli</label>
+                                        <input type="text" class="form-control" id="alamat" name="alamat" placeholder="" readonly="readonly" value="{{ Auth::user()->alamat }}">
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 pt-3">
+                                    <div class="form-group">
                                         <label for="matapelajaran">Mata Pelajaran</label>
                                         <select class="form-control" id="mapel" name="mapel">
                                             <option value="">-Pilih Mata Pelajaran-</option>

@@ -62,6 +62,7 @@
                                                 <th>Nama siswa</th>
                                                 <th>Kelas</th>
                                                 <th>Mata Pelajaran</th>
+                                                <th>Alamat Asli</th>
                                                 <th>Lokasi</th>
                                             </tr>
                                         </thead>
@@ -74,6 +75,7 @@
                                                 <td>{{ $d->name }}</td>
                                                 <td>{{ $d->kelas }}</td>
                                                 <td>{{ $d->mapel }}</td>
+                                                <td>{{ $d->alamat }}</td>
                                                 <td>{{ $d->location }}</td>
                                             </tr>
                                             @endforeach
